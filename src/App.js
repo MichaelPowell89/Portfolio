@@ -9,7 +9,7 @@ import Web from "./views/Web"
 import About from './views/About';
 import Contact from './views/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './public/styles.css'
+import { Navbar, Nav, Container} from 'react-bootstrap';
 
 function App() {
   return (
