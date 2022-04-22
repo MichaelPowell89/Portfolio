@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container} from 'react-bootstrap';
+import gameDesign from "../public/images/Controller.png"
 
 const NavbarTest = () => {
 	const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ const NavbarTest = () => {
 					<Nav className="me-auto">
 					</Nav>
 					<Nav>
-						<Nav.Link href="/gamedesign"><img className="navbarLogo" src="../images/controller.png" alt=""/></Nav.Link>
+						<Nav.Link href="/gamedesign"><img className="navbarLogo" src={gameDesign} alt=""/></Nav.Link>
 						<Nav.Link href="/webdesign"><img className="navbarLogo" src="../images/website.png" alt=""/></Nav.Link>
 						<Nav.Link href="/about"><img className="navbarLogo" src="../images/man.png" alt=""/></Nav.Link>
 						<Nav.Link href="/contact"><img className="navbarLogo" src="../images/email.png" alt=""/></Nav.Link>
