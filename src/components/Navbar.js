@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { Navbar, Nav, Container} from 'react-bootstrap';
+import gameDesign from "../public/images/Controller.png"
+import webDesign from "../public/images/website.png"
+import about from "../public/images/man.png"
+import contact from "../public/images/email.png"
+import linkedIn from "../public/images/linked.png"
 
-const Navbar = () => {
+const NavbarTest = () => {
 	const [open, setOpen] = useState(false);
 
 	const handleClick = () => {
@@ -14,32 +20,24 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="navbar">
-			<Link to="/" className="nav-logo">
-				Michael Powell
-			</Link>
-			<div onClick={handleClick} className="nav-icon">
-				{open ? <FiX /> : <FiMenu />}
-			</div>
-			<ul className={open ? 'nav-links active' : 'nav-links'}>
-				<li className="nav-item">
-					<Link to="/about" className="nav-link" onClick={closeMenu}>
-						<img className="navbarLogo" src="../images/man.png"/>
-					</Link>
-				</li>
-				<li className="nav-item">
-					<Link to="/contact" className="nav-link" onClick={closeMenu}>
-						<img className="navbarLogo" src="../images/email.png"/>
-					</Link>
-				</li>
-				<li className="nav-item">
-					<Link to="https://www.linkedin.com/in/michael-powell-38870333" className="nav-link" onClick={closeMenu}>
-						<img className="navbarLogo" src="../images/linkedin.png"/>
-					</Link>
-				</li>
-			</ul>
-		</nav>
+		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+			<Container>
+				<Navbar.Brand href="/">Michael Powell</Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav className="me-auto">
+					</Nav>
+					<Nav>
+						<Nav.Link href="/gamedesign"><img className="navbarLogo" src={gameDesign} alt=""/></Nav.Link>
+						<Nav.Link href="/webdesign"><img className="navbarLogo" src={webDesign} alt=""/></Nav.Link>
+						<Nav.Link href="/about"><img className="navbarLogo" src={about} alt=""/></Nav.Link>
+						<Nav.Link href="/contact"><img className="navbarLogo" src={contact} alt=""/></Nav.Link>
+						<Nav.Link href={"https://www.linkedin.com/in/michael-powell-38870333"}><img className="navbarLogo" src={linkedIn} alt=""/></Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
 	);
 };
 
-export default Navbar;
+export default NavbarTest;
