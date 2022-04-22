@@ -1,8 +1,8 @@
 {
-  "name": "portfolio_github",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michaelpowell89.github.io/portfolio_github/",
+  "homepage": "https://michaelpowell89.github.io/portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@testing-library/jest-dom": "^5.16.2",
@@ -48,11 +48,11 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichaelPowell89/portfolio_github.git"
+    "url": "git+https://github.com/MichaelPowell89/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichaelPowell89/portfolio_github/issues"
+    "url": "https://github.com/MichaelPowell89/portfolio/issues"
   }
 }
