@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./components/Footer"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar.jsx";
-import Home from "./views/Home"
+import Home from "./views/Home.jsx"
 import Game from "./views/Game"
 import Web from "./views/Web"
 import About from './views/About';
