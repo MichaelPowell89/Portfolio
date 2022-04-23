@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "e1c315460ddb5c0d62a5",
+    "revision": "d26d10c10f793c140387",
     "url": "/portfolio_github/static/css/main.2b40ecf9.chunk.css"
   },
   {
-    "revision": "e1c315460ddb5c0d62a5",
-    "url": "/portfolio_github/static/js/main.e1c31546.chunk.js"
+    "revision": "d26d10c10f793c140387",
+    "url": "/portfolio_github/static/js/main.d26d10c1.chunk.js"
   },
   {
     "revision": "e5fed62f2796369ce831",
     "url": "/portfolio_github/static/js/1.e5fed62f.chunk.js"
   },
   {
-    "revision": "d77622eb7cdedfd5ba54",
+    "revision": "b438a9582ac5f7c1dd1f",
     "url": "/portfolio_github/static/css/2.cde45c5f.chunk.css"
   },
   {
-    "revision": "d77622eb7cdedfd5ba54",
-    "url": "/portfolio_github/static/js/2.d77622eb.chunk.js"
+    "revision": "b438a9582ac5f7c1dd1f",
+    "url": "/portfolio_github/static/js/2.b438a958.chunk.js"
   },
   {
     "revision": "505c18c173a78237e827",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/portfolio_github/static/media/email.26c94a3d.png"
   },
   {
-    "revision": "1d89cac9d6cccfb1c9c1f2fa0783a712",
+    "revision": "cf483df80c0d922c5b6d63f468afe567",
     "url": "/portfolio_github/index.html"
   }
 ];
