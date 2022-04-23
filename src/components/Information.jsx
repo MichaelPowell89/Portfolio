@@ -1,6 +1,4 @@
-// import { useState } from "react";
 import React from "react";
-// import workExamples from "../workExamples"
 
 function Information (props){
     return (
