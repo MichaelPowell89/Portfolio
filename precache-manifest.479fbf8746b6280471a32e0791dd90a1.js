@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "ab849749e025e3b580ba",
-    "url": "/portfolio_github/static/css/main.1333448b.chunk.css"
+    "revision": "80d3ec455ccbeacaa388",
+    "url": "/portfolio_github/static/css/main.0aa9b768.chunk.css"
   },
   {
-    "revision": "ab849749e025e3b580ba",
-    "url": "/portfolio_github/static/js/main.ab849749.chunk.js"
+    "revision": "80d3ec455ccbeacaa388",
+    "url": "/portfolio_github/static/js/main.80d3ec45.chunk.js"
   },
   {
-    "revision": "8fff69a20f34251f7898",
-    "url": "/portfolio_github/static/js/1.8fff69a2.chunk.js"
+    "revision": "655ced442bf892c5e859",
+    "url": "/portfolio_github/static/js/1.655ced44.chunk.js"
   },
   {
-    "revision": "89bd273b9864a974fa5b",
-    "url": "/portfolio_github/static/css/2.fb98dddb.chunk.css"
+    "revision": "4c09a6ec67186dca6f19",
+    "url": "/portfolio_github/static/css/2.25b2d71e.chunk.css"
   },
   {
-    "revision": "89bd273b9864a974fa5b",
-    "url": "/portfolio_github/static/js/2.89bd273b.chunk.js"
+    "revision": "4c09a6ec67186dca6f19",
+    "url": "/portfolio_github/static/js/2.4c09a6ec.chunk.js"
   },
   {
-    "revision": "83306124b83bf0d1537a",
-    "url": "/portfolio_github/static/js/runtime~main.83306124.js"
+    "revision": "0ef6a794664d88e6604e",
+    "url": "/portfolio_github/static/js/runtime~main.0ef6a794.js"
   },
   {
     "revision": "53f41cbb249858138d0b6c79e2ce7915",
@@ -46,6 +46,10 @@ self.__precacheManifest = [
   {
     "revision": "26c94a3d5ec822e6d180ec22009cfb1f",
     "url": "/portfolio_github/static/media/email.26c94a3d.png"
+  },
+  {
+    "revision": "b51b1bbdf9052195b7c89992a4fd5aa6",
+    "url": "/portfolio_github/static/media/CV_GameDesign.b51b1bbd.PDF"
   },
   {
     "revision": "17a610574ae6c3708bd9b8499310c19b",
@@ -128,7 +132,7 @@ self.__precacheManifest = [
     "url": "/portfolio_github/static/media/React.f81a6f37.png"
   },
   {
-    "revision": "75e16358fa80a44346b543a3845d37b2",
+    "revision": "0fcccbe25db890ccc2515854c6583c7f",
     "url": "/portfolio_github/index.html"
   }
 ];
