@@ -8,7 +8,7 @@ function Home (){
         <Container>
             <div className="homePage">
                 <div className="homeContainer" >
-                <a href="/gamedesign">
+                <a href="/portfolio_github/gamedesign">
                    <img className="homeImage" src={gameDesign}/>
                    </a>
                 </div>
