@@ -542,10 +542,10 @@ button:enabled:hover {
   margin: 20px;
   overflow: scroll;
   width: 100%;
-  /* -ms-overflow-style: none;  /* IE and Edge */
-  /* scrollbar-width: none;  Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /*Firefox */
   display: inline-block;
-  /* max-height: 50vh; */
+  max-height: 50vh;
 }
 
 .scrollContent::-webkit-scrollbar {
