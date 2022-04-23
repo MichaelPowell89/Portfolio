@@ -12,30 +12,15 @@ import { Card, Container } from 'react-bootstrap';
 const Game = (props) => {
 
     const [selectedTitle, newTitle] = useState(5);
-    // const [background, newBackground] = useState("url('https://store-images.s-microsoft.com/image/apps.18123.14533227276590283.41248ee4-3267-47b4-aff1-815a0c15ee8a.ca262ffb-a7fa-49ea-8aab-d990cd7d8016')");
-    const [background, newBackground] = useState("./images/Games/AFLE3/TitleScreen.png");
-
-
-    const ChangeBackground = (value) => {
-        // newBackground(Content.backgroundImage);
-        // console.log("Content.backgroundImage: " + Content.backgroundImage);
-        //const backgroundImageTest = props.backgroundImage;
-        //console.log(backgroundImageTest);
-    }
 
     function handleChange(value) {
         return function () {
             newTitle(value);
-            //newBackground();
-            console.log("Background: " + props.back)
-            console.log("Background: " + background)
         }
     }
 
     return (
         <div>
-            {/* <div className="backgroundImage" style={{ backgroundImage: background }} /> */}
-            {/* <img className="backgroundImage" src={background} /> */}
             <div className="overlay" />
             <Container>
                 <Container className="ContentPage">
@@ -67,7 +52,6 @@ const Game = (props) => {
                             <div>
                                 <RugbyCarousel
                                     image={props.image}
-                                    backgroundImage = {props.backgroundImage}
                                 />
                             </div>
                         </div>

@@ -32,7 +32,7 @@ const NavbarTest = () => {
 						{/* <Nav.Link href="/portfolio_github/webdesign"><img className="navbarLogo" src={webDesign} alt=""/></Nav.Link> */}
 						<Nav.Link href="/portfolio_github/about"><img className="navbarLogo" src={about} alt=""/></Nav.Link>
 						<Nav.Link href="/portfolio_github/contact"><img className="navbarLogo" src={contact} alt=""/></Nav.Link>
-						<Nav.Link href="https://www.linkedin.com/in/michael-powell-38870333"><img className="navbarLogo" src={linkedIn} alt=""/></Nav.Link>
+						<Nav.Link href="https://www.linkedin.com/in/michael-powell-38870333" target="_blank"><img className="navbarLogo" src={linkedIn} alt=""/></Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

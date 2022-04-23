@@ -1,21 +1,29 @@
+import ck01 from "./public/images/Games/CK/CatapultKing01.jpg"
+import ck02 from "./public/images/Games/CK/CatapultKing02.jpg"
+import ck03 from "./public/images/Games/CK/CatapultKing03.jpg"
+import ck04 from "./public/images/Games/CK/CatapultKing04.jpg"
+import ck05 from "./public/images/Games/CK/CatapultKing05.jpg"
+import ck06 from "./public/images/Games/CK/CatapultKing06.jpg"
+
+
 const CK = [
     {
-      image: "../images/games/CK/IMG_0590.png"
+      image: {ck01},
     },
     {
-      image: "../images/games/CK/IMG_0593.png"
+      image: {ck02}
     },
     {
-      image: "../images/games/CK/IMG_0613.png"
+      image: {ck03}
     },
     {
-      image: "../images/games/CK/IMG_0618.png"
+      image: {ck04}
     },
     {
-      image: "../images/games/CK/IMG_0647.png"
+      image: {ck05}
     },
     {
-      image: "../images/games/CK/IMG_0649.png"
+      image: {ck06}
     }
 ]
   export default CK;
