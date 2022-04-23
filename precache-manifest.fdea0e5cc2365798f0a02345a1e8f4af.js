@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "905deb8911aadaa359f2",
-    "url": "/portfolio_github/static/css/main.da6ae1f1.chunk.css"
+    "revision": "ab849749e025e3b580ba",
+    "url": "/portfolio_github/static/css/main.1333448b.chunk.css"
   },
   {
-    "revision": "905deb8911aadaa359f2",
-    "url": "/portfolio_github/static/js/main.905deb89.chunk.js"
+    "revision": "ab849749e025e3b580ba",
+    "url": "/portfolio_github/static/js/main.ab849749.chunk.js"
   },
   {
-    "revision": "6027f9d15d8148605ea1",
-    "url": "/portfolio_github/static/js/1.6027f9d1.chunk.js"
+    "revision": "8fff69a20f34251f7898",
+    "url": "/portfolio_github/static/js/1.8fff69a2.chunk.js"
   },
   {
-    "revision": "bd51a34fa18eec940afa",
-    "url": "/portfolio_github/static/css/2.8f9432be.chunk.css"
+    "revision": "89bd273b9864a974fa5b",
+    "url": "/portfolio_github/static/css/2.fb98dddb.chunk.css"
   },
   {
-    "revision": "bd51a34fa18eec940afa",
-    "url": "/portfolio_github/static/js/2.bd51a34f.chunk.js"
+    "revision": "89bd273b9864a974fa5b",
+    "url": "/portfolio_github/static/js/2.89bd273b.chunk.js"
   },
   {
-    "revision": "53d75850ec1c5bbce841",
-    "url": "/portfolio_github/static/js/runtime~main.53d75850.js"
+    "revision": "83306124b83bf0d1537a",
+    "url": "/portfolio_github/static/js/runtime~main.83306124.js"
   },
   {
     "revision": "53f41cbb249858138d0b6c79e2ce7915",
@@ -100,7 +100,35 @@ self.__precacheManifest = [
     "url": "/portfolio_github/static/media/UnrealEngine.7472fa26.png"
   },
   {
-    "revision": "7d4e0a1e57ed0b7bc4eda20d069c282e",
+    "revision": "edf343dca51b4ba7400efa7edbf1cdb7",
+    "url": "/portfolio_github/static/media/c++.edf343dc.png"
+  },
+  {
+    "revision": "2028cfa9095f6fbae2c788b9626e0544",
+    "url": "/portfolio_github/static/media/unity.2028cfa9.png"
+  },
+  {
+    "revision": "2cfe978f6f2a54819103377f91e7842a",
+    "url": "/portfolio_github/static/media/Photoshop.2cfe978f.png"
+  },
+  {
+    "revision": "69d3fbd035deee2d55c9a4ff32f53c10",
+    "url": "/portfolio_github/static/media/Illustrator.69d3fbd0.png"
+  },
+  {
+    "revision": "eb6e5212ee99eb162faff403d683d33e",
+    "url": "/portfolio_github/static/media/XD.eb6e5212.png"
+  },
+  {
+    "revision": "611583b8a0917985410b34f5f1b76ade",
+    "url": "/portfolio_github/static/media/Maya.611583b8.png"
+  },
+  {
+    "revision": "f81a6f373c244b1f70f4b7402b5ab372",
+    "url": "/portfolio_github/static/media/React.f81a6f37.png"
+  },
+  {
+    "revision": "75e16358fa80a44346b543a3845d37b2",
     "url": "/portfolio_github/index.html"
   }
 ];
