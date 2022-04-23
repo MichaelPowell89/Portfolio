@@ -12,11 +12,11 @@ function Home (){
                    <img className="homeImage" src={gameDesign}/>
                    </a>
                 </div>
-                <div className="homeContainer">
+                {/* <div className="homeContainer">
                 <a href="/webdesign">
                     <img className="homeImage" src={website}/>
-                    </a>
-                </div>
+                </a>
+                </div> */}
             </div>
         </Container>
     )
