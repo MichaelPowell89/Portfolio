@@ -13,7 +13,7 @@ function Content (props){
 
     return (
         <div className="term" onMouseOver={expand} style={{transform: isExpanded ? "scale(1.1)" : "scale(1.0)"}} onMouseOut={contract}>
-            <img className="imageThumbnail" src={props.image} alt=""></img>
+            <img className="imageThumbnail" src={props.image} alt=""/>
         </div>
       );
 }

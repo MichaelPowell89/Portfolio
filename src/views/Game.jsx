@@ -65,15 +65,6 @@ const Game = (props) => {
                             </div>
                         </div>
 
-                        <h1 className="contentTitle">{workExamples[2].title}</h1>
-                        <div className="dictionary" onClick={handleChange('2')}>
-                            <div>
-                                <TyCarousel
-                                    image={props.image}
-                                />
-                            </div>
-                        </div>
-
                         <h1 className="contentTitle">{workExamples[3].title}</h1>
                         <div className="dictionary" onClick={handleChange('3')}>
                             <div>
@@ -94,9 +85,18 @@ const Game = (props) => {
 
                         <h1 className="contentTitle">{workExamples[4].title}</h1>
                         <div className="dictionary" onClick={handleChange('4')}>
-                            <div style={{ marginBottom: "300px" }}>
+                            <div>
                                 <OGICarousel
                                     ChangeBackground={props.image}
+                                />
+                            </div>
+                        </div>
+
+                        <h1 className="contentTitle">{workExamples[2].title}</h1>
+                        <div className="dictionary" onClick={handleChange('2')}>
+                            <div style={{ marginBottom: "300px" }}>
+                                <TyCarousel
+                                    image={props.image}
                                 />
                             </div>
                         </div>

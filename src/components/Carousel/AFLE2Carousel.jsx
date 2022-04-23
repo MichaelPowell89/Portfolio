@@ -11,6 +11,7 @@ export default function SimpleSlider() {
     slidesToShow: 3,
     slidesToScroll: 1
   };
+
   return (
     <Slider {...settings}>
       {AFLE2.map((props) => (

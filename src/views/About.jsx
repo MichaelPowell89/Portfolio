@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
+import profile from "../public/images/LogoAsset.png"
 
 function About (){
 
@@ -7,7 +8,7 @@ function About (){
         <Container>
             <div className="aboutPage">
                 <div className="imageContainer">
-                    <img className="profileImage" src="./images/LogoAsset.png" />
+                    <img className="profileImage" src={profile} />
                     <div className="AboutContainer" style={{ width: "100%" }}>
                         <p className="aboutMe">Michael Powell is currently based on Melbourne, Australia and is employed as a quality assurance analyst with 4+ years experience.
                             However, his true passion is in game design where he has had many experiences across the development of different projects including 3 AAA titles.
@@ -18,7 +19,7 @@ function About (){
                     <col-4>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Unreal Engine!</Tooltip>}>
-                                <p><img className="experienceIcon unrealEngine" src="../images/experience/UnrealEngine.png" alt="" /></p>
+                                <p><img className="experienceIcon unrealEngine" src={"../images/experience/UnrealEngine.png"} alt="" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
