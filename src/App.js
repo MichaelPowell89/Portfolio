@@ -16,11 +16,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
           <Routes>
-            <Route path="/portfolio_github/" element={<Home/>}/>
-            <Route path="/portfolio_github/gamedesign" element={<Game/>}/>
+            <Route path="portfolio_github/" element={<Home/>}/>
+            <Route path="portfolio_github/gamedesign" element={<Game/>}/>
             {/* <Route path="/portfolio_github/webdesign" element={<Web/>}/> */}
-            <Route path="/portfolio_github/About" element={<About/>}/>
-            <Route path="/portfolio_github/Contact" element={<Contact/>}/>
+            <Route path="portfolio_github/About" element={<About/>}/>
+            <Route path="portfolio_github/Contact" element={<Contact/>}/>
           </Routes>
       </BrowserRouter>
       <Footer />

@@ -7,7 +7,7 @@ export default function SimpleSlider() {
   var settings = {
     dots: false,
     infinite: false,
-    speed: 500,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1
   };

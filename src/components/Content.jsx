@@ -1,21 +1,27 @@
 import React, {useState} from "react";
+import { SRLWrapper } from "simple-react-lightbox";
 
 function Content (props){
-  const [isExpanded, setExpanded] = useState(false)
+  // const [isExpanded, setExpanded] = useState(false)
 
-  function expand() {
-    setExpanded(true);
-  }
+  // function expand() {
+  //   setExpanded(true);
+  // }
 
-  function contract() {
-    setExpanded(false);
-  }
+  // function contract() {
+  //   setExpanded(false);
+  // }
 
     return (
-        <div className="term" onMouseOver={expand} style={{transform: isExpanded ? "scale(1.1)" : "scale(1.0)"}} onMouseOut={contract}>
+      <SRLWrapper>
+        <div className="term" >
             <img className="imageThumbnail" src={props.image} alt=""/>
         </div>
+      </SRLWrapper>
       );
 }
 
 export default Content;
+
+//onMouseOver={expand} onMouseOut={contract}
+// style={{transform: isExpanded ? "scale(1.1)" : "scale(1.0)"}}

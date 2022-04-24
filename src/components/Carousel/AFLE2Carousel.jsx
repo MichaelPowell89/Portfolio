@@ -5,18 +5,17 @@ import AFLE2 from "../../AFLE2";
 
 export default function SimpleSlider() {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: false,
-    speed: 500,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1
   };
-
   return (
     <Slider {...settings}>
       {AFLE2.map((props) => (
         <Content
-          image={props.image}
+          image= {props.image}
        />
        ))}
     </Slider>

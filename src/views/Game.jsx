@@ -8,6 +8,7 @@ import OGICarousel from '../components/Carousel/OGICarousel'
 import SlimeTimeCarousel from '../components/Carousel/SlimeTimeCarousel'
 import workExamples from "../workExamples"
 import { Card, Container } from 'react-bootstrap';
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 const Game = (props) => {
 
@@ -20,7 +21,7 @@ const Game = (props) => {
     }
 
     return (
-        <div>
+        <SimpleReactLightbox>
             <div className="overlay" />
             <Container>
                 <Container className="ContentPage">
@@ -103,7 +104,7 @@ const Game = (props) => {
                     </div>
                 </Container>
             </Container>
-        </div>
+        </SimpleReactLightbox>
     )
 }
 

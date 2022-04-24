@@ -16,9 +16,9 @@ const workExamples = [
       link: "https://www.rugbychallenge4.com",
       position: <h5 className="positionDescription">Quality Assurance & Game Design</h5>,
       description: <ul>
-        <li> Extensive play testing through production stages of development consisting of sanity and regression testing</li>
-        <li> Research, discussion and documention for gameplay improvements for updates based on consumer feedback and competition reviews</li>
-        <li> Discussion, collaboration and mediation with stakeholders regarding feedback and development</li>
+        <li>Providing extensive play testing and in depth reviews through later stages of production</li>
+        <li>Research, discussion and documention for gameplay improvements for updates based on consumer feedback and competitive sports titles</li>
+        <li>Discussion, collaboration and mediation with stakeholders regarding feedback, development and implementation of new gameplay features</li>
       </ul>,
       // Xbox
       platform1: <a href="https://www.xbox.com/en-au/games/store/rugby-challenge-4/9p3qwt95fmhq" className="platformLogo"><img width='50px' height='50px' src={xbox} alt=""/></a>,
@@ -36,11 +36,10 @@ const workExamples = [
       link: "https://www.aflevolution2.com.au/",
       position: <h5 className="positionDescription">Quality Assurance & Game Design</h5>,
       description: <ul>
-        <li> Extensive testing through production stages of development</li>
-        <li> Research, discussion and documention for gameplay improvements for updates based on consumer feedback and competition reviews</li>
-        <li> Discussion, collaboration and mediation with stakeholders regarding feedback and development</li>
-        <li> Documentation and design of player attributes and statistics for depicting gameplay behaviour consistent with real world players</li>
-        <li> Assisting with marketing and advertisements with capturing gameplay images and footage</li>
+        <li>Research, discussion, documention and community interaction for scoping and implementing gameplay improvements for DLC and future titles</li>
+        <li>Regular meetings and collaboration with stakeholders which consisted of daily cooperative online testing</li>
+        <li>Documentation and design of player attributes and statistics for depicting gameplay behaviour consistent with real world players</li>
+        <li>Assisting with marketing and advertisements with capturing gameplay images and footage using Unreal Engine</li>
       </ul>,// Xbox
       platform1: <a href="https://www.xbox.com/en-au/games/store/afl-evolution-2/9nsx507n0s3x" className="platformLogo"><img width='50px' height='50px' src={xbox} alt=""/></a>,
       //Playstation
@@ -57,8 +56,8 @@ const workExamples = [
       link: "",
       position: <h5 className="positionDescription">Quality Assurance</h5>,
       description: <ul>
-        <li> Extensive testing through all stages of development</li>
-        <li> Daily scrum meetings with stakeholders</li>
+        <li>Extensive testing through all stages of development</li>
+        <li>Daily scrum meetings with stakeholders</li>
       </ul>,
       // Xbox
       platform1: <a href="https://www.xbox.com/en-au/games/store/ty-the-tasmanian-tiger-2-bush-rescue-hd/9nm1h95grgk7" className="platformLogo"><img width='50px' height='50px' src={xbox} alt=""/></a>,
@@ -75,8 +74,8 @@ const workExamples = [
       position: <h5 className="positionDescription">Quality Assurance & Level Design</h5>,
       description: <ul>
         <li> Level design, construction and testing in Unity</li>
-        <li> Extensive playtesting through all stages of development</li>
-        <li> Discussion and documentation for feedback regarding gameplay and player satisfaction</li>
+        <li> Extensive playtesting through all stages of development, started in 2011 and returned to collaborate again in 2020</li>
+        <li> Discussion and documentation for feedback regarding gameplay, player satisfaction and tone</li>
       </ul>,
       platform1: <a href="https://play.google.com/store/apps/details?id=com.chillingo.catapultkingfree.android.row" className="platformLogo"><img width='45px' height='55px' src={android} alt=""/></a>,
       platform2: <a href="https://apps.apple.com/us/app/id497936366" className="platformLogo"><img width='50px' height='50px' src={apple} alt=""/></a>,
@@ -88,9 +87,10 @@ const workExamples = [
       Link: "",
       position: <h5 className="positionDescription">Design</h5>,
       description: <ul>
-        <li> Design and documentation from original concept through to finished development</li>
-        <li> Level design and extensive playtesting to estimate gameplay difficulty and player enjoyment</li>
-        <li> Discussion and documentation for feedback regarding gameplay and player satisfaction</li>
+        <li>Design and documentation from original concept through to finished product</li>
+        <li>Level design and extensive playtesting to estimate and balance gameplay difficulty with player enjoyment</li>
+        <li>Assisted with community playtesting and displaying game at public exhibition</li>
+        <li>Originally released to apple store in 2011 but has since been removed</li>
       </ul>
     },
     {
@@ -100,9 +100,10 @@ const workExamples = [
       Link: "",
       position: <h5 className="positionDescription">Design</h5>,
       description: <ul>
-        <li> Initial design and documentation for sequel title to AFL Evolution 2</li>
-        <li> Early UI concepts for improving design to compete with modern sports titles</li>
-        <li> Gather feedback and reviews from consumers to present valid concepts to shareholder regarding improving gameplay</li>
+        <li>Initial design, documentation and scoping for sequel title to AFL Evolution 2</li>
+        <li>Early UI concepts for improving design to compete with modern sports titles</li>
+        <li>Analyze and review real-world player behaviour and potential gameplay implementations to make game more authentic</li>
+        <li>Gather feedback and reviews from consumers to present valid concepts to shareholder regarding improving gameplay and potential sales</li>
       </ul>
     },
     {
@@ -112,8 +113,8 @@ const workExamples = [
       Link: "https://itch.io/jam/gmtk-2021/rate/1082073",
       position: <h5 className="positionDescription">Design</h5>,
       description: <ul>
-        <li> Collaboration, design and documentation for game concept based on concept of "Together"</li>
-        <li> UI, Level and puzzle design</li>
+        <li>Collaboration, design and documentation for game based on the concept of "Together"</li>
+        <li>UI, Level and puzzle design within Unity</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={windows} alt=""/></div>
     },

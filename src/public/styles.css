@@ -147,7 +147,7 @@ a:hover,
 
 .dictionary {
   /* display: flex; */
-  opacity: 10%;
+  opacity: 10% !important;
   transition: 0.5s;
   transition: 0.5s ease-in;
 }
@@ -545,7 +545,7 @@ button:enabled:hover {
   /* -ms-overflow-style: none;  /* IE and Edge */
   /* scrollbar-width: none;  Firefox */
   display: inline-block;
-  /* max-height: 50vh; */
+  max-height: 50vh; */
 }
 
 .scrollContent::-webkit-scrollbar {

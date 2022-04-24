@@ -73,7 +73,7 @@ function ContactForm (){
                             <p className="informationTitle"><img className="contactIcon" src="../images/contactPhone.png" alt=""/>Phone</p>
                                 </Row>
                                 <Row>
-                                    <p className="informationText">+61488440874</p>
+                                    <p className="informationText">+61 488 440 874</p>
                                 </Row>
                             </td>
                         </Row>
