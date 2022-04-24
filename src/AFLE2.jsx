@@ -1,6 +1,6 @@
 const AFLE2 = [
   {
-    image: '../images/Games/AFLE2/CharlieCameron.png'
+    image: {afle201}
   },
   {
     image: '../images/Games/AFLE2/HighresScreenshot00204.png'
@@ -31,4 +31,3 @@ const AFLE2 = [
   }
 ]
   export default AFLE2;
-  
