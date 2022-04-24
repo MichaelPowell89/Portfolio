@@ -1,6 +1,6 @@
 const AFLE2 = [
   {
-    image: {afle201}
+    image: '../images/Games/AFLE2/CharlieCameron.png'
   },
   {
     image: '../images/Games/AFLE2/HighresScreenshot00204.png'
