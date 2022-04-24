@@ -1,36 +1,44 @@
-import React from "react";
+import afle201 from './public/images/Games/AFLE2/CharlieCameron.png'
+import afle202 from './public/images/Games/AFLE2/HighresScreenshot00204.png'
+import afle203 from './public/images/Games/AFLE2/HighresScreenshot00206.png'
+import afle204 from './public/images/Games/AFLE2/HighresScreenshot00216.png'
+import afle205 from './public/images/Games/AFLE2/HighresScreenshot00218.png'
+import afle206 from './public/images/Games/AFLE2/HighresScreenshot00509.png'
+import afle207 from './public/images/Games/AFLE2/HighresScreenshot00510.png'
+import afle208 from './public/images/Games/AFLE2/HighresScreenshot00523.png'
+import afle209 from './public/images/Games/AFLE2/HighresScreenshot00526.png'
+import afle2010 from './public/images/Games/AFLE2/HighresScreenshot00219.png'
 
 const AFLE2 = [
   {
-    image: '/portfolio_github/static/media/CharlieCameron.17a61057.png'
+    image: {afle201}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00204.png"
+    image: {afle202}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00206.png"
+    image: {afle203}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00216.png"
+    image: {afle204}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00218.png"
+    image: {afle205}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00509.png"
+    image: {afle206}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00510.png"
+    image: {afle207}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00523.png"
+    image: {afle208}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00526.png"
+    image: {afle209}
   },
   {
-    image: "/portfolio_github/static/media/HighresScreenshot00219.png"
+    image: {afle2010}
   }
 ]
   export default AFLE2;
-  
