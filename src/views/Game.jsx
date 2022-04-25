@@ -29,6 +29,7 @@ const Game = (props) => {
                         <Card.Body>
                             <Card.Title>{workExamples[selectedTitle].title} - {workExamples[selectedTitle].ReleaseYear}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">{workExamples[selectedTitle].position}</Card.Subtitle>
+                            <Card.Text>{workExamples[selectedTitle].summary}</Card.Text>
                             <Card.Text>{workExamples[selectedTitle].description}</Card.Text>
                             <Card.Link href="#">{workExamples[selectedTitle].platform1}</Card.Link>
                             <Card.Link href="#">{workExamples[selectedTitle].platform2}</Card.Link>
@@ -79,7 +80,7 @@ const Game = (props) => {
                         <div className="dictionary" onClick={handleChange('6')}>
                             <div>
                                 <SlimeTimeCarousel
-                                    ChangeBackground={props.image}
+                                    image={props.image}
                                 />
                             </div>
                         </div>
@@ -88,7 +89,7 @@ const Game = (props) => {
                         <div className="dictionary" onClick={handleChange('4')}>
                             <div>
                                 <OGICarousel
-                                    ChangeBackground={props.image}
+                                    image={props.image}
                                 />
                             </div>
                         </div>

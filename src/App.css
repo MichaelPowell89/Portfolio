@@ -716,12 +716,6 @@ button:enabled:hover {
   margin: 0 2em 1em !important;
 }
 
-@media (min-width: 1200px) {
-  .nav-link {
-    /* padding: 0 0 1em 3em !important; */
-  }
-}
-
 @media (max-width: 1200px) {
   .navbarLogo {
     margin: 30px 0 !important;
@@ -773,4 +767,9 @@ img.navbarLogo {
   margin-top: -5px;
   font-size: 2.25em;
   transition: all 0.3s ease-in-out;
+}
+
+.summary{
+  font-size: .9em;
+  font-style: italic;
 }
