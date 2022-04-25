@@ -6,7 +6,7 @@ import gameDesign from "../public/images/controller.png"
 import about from "../public/images/man.png"
 import contact from "../public/images/email.png"
 import linkedIn from "../public/images/linkedin.png"
-import CV from "../public/CV_GameDesign.PDF"
+import CV from "../public/CV_GameDesign.pdf"
 
 const NavbarTest = () => {
 	const [open, setOpen] = useState(true);
