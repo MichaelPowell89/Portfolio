@@ -25,10 +25,10 @@ const NavbarTest = () => {
 					<Nav className="me-auto">
 					</Nav>
 					<Nav>
-						<Link to="/portfolio_github/gamedesign"><img className="navbarLogo" src={gameDesign} alt=""/></Link>
+						<Link to="/portfolio/gamedesign"><img className="navbarLogo" src={gameDesign} alt=""/></Link>
 						{/* <Nav.Link href="/portfolio_github/webdesign"><img className="navbarLogo" src={webDesign} alt=""/></Nav.Link> */}
-						<Link to="/portfolio_github/about"><img className="navbarLogo" src={about} alt=""/></Link>
-						<Link to="/portfolio_github/contact"><img className="navbarLogo" src={contact} alt=""/></Link>
+						<Link to="/portfolio/about"><img className="navbarLogo" src={about} alt=""/></Link>
+						<Link to="/portfolio/contact"><img className="navbarLogo" src={contact} alt=""/></Link>
 						<Nav.Link href={CV} download><h1 className="CV">CV</h1></Nav.Link>
 						<Link to="https://www.linkedin.com/in/michael-powell-38870333"><img className="navbarLogo" src={linkedIn} alt=""/></Link>
 					</Nav>
