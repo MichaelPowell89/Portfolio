@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a0290a6741cf885adb60",
+    "revision": "fbc940008a0c2cc7047b",
     "url": "/portfolio/static/css/main.1bdad57c.chunk.css"
   },
   {
-    "revision": "a0290a6741cf885adb60",
-    "url": "/portfolio/static/js/main.a0290a67.chunk.js"
+    "revision": "fbc940008a0c2cc7047b",
+    "url": "/portfolio/static/js/main.fbc94000.chunk.js"
   },
   {
     "revision": "d47d248f80db6ec2e267",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/email.26c94a3d.png"
   },
   {
-    "revision": "b51b1bbdf9052195b7c89992a4fd5aa6",
-    "url": "/portfolio/static/media/CV_GameDesign.b51b1bbd.PDF"
+    "revision": "8ec1a5bb871f0343bf8c3f6aaaeb778e",
+    "url": "/portfolio/static/media/CV_GameDesign.8ec1a5bb.pdf"
   },
   {
     "revision": "6af8a012de1b5275743a5182c8c3654b",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/React.f81a6f37.png"
   },
   {
-    "revision": "5d5d9894e1916d9f0f8c1476dae53f38",
+    "revision": "ca679d98379bf7d7ac7056e9c97c124c",
     "url": "/portfolio/index.html"
   }
 ];

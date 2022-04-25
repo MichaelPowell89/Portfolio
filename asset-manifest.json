@@ -1,7 +1,7 @@
 {
   "main.css": "/portfolio/static/css/main.1bdad57c.chunk.css",
-  "main.js": "/portfolio/static/js/main.a0290a67.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.a0290a67.chunk.js.map",
+  "main.js": "/portfolio/static/js/main.fbc94000.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.fbc94000.chunk.js.map",
   "static/js/1.d47d248f.chunk.js": "/portfolio/static/js/1.d47d248f.chunk.js",
   "static/js/1.d47d248f.chunk.js.map": "/portfolio/static/js/1.d47d248f.chunk.js.map",
   "static/css/2.1cb504c2.chunk.css": "/portfolio/static/css/2.1cb504c2.chunk.css",
@@ -15,7 +15,7 @@
   "static/media/websiteWhite.png": "/portfolio/static/media/websiteWhite.e2532f0a.png",
   "static/media/man.png": "/portfolio/static/media/man.47305402.png",
   "static/media/email.png": "/portfolio/static/media/email.26c94a3d.png",
-  "static/media/CV_GameDesign.PDF": "/portfolio/static/media/CV_GameDesign.b51b1bbd.PDF",
+  "static/media/CV_GameDesign.pdf": "/portfolio/static/media/CV_GameDesign.8ec1a5bb.pdf",
   "static/media/appleWhite.png": "/portfolio/static/media/appleWhite.6af8a012.png",
   "static/media/LogoAsset.png": "/portfolio/static/media/LogoAsset.356d05c2.png",
   "static/media/UnrealEngine.png": "/portfolio/static/media/UnrealEngine.7472fa26.png",
@@ -26,9 +26,9 @@
   "static/media/XD.png": "/portfolio/static/media/XD.eb6e5212.png",
   "static/media/Maya.png": "/portfolio/static/media/Maya.611583b8.png",
   "static/media/React.png": "/portfolio/static/media/React.f81a6f37.png",
-  "static/css/2.1cb504c2.chunk.css.map": "/portfolio/static/css/2.1cb504c2.chunk.css.map",
   "static/css/main.1bdad57c.chunk.css.map": "/portfolio/static/css/main.1bdad57c.chunk.css.map",
+  "static/css/2.1cb504c2.chunk.css.map": "/portfolio/static/css/2.1cb504c2.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.e4feb30ac79ada6a4d9cf824ae922cbb.js": "/portfolio/precache-manifest.e4feb30ac79ada6a4d9cf824ae922cbb.js",
+  "precache-manifest.36817e6cad8922553ea27ad801ea51b7.js": "/portfolio/precache-manifest.36817e6cad8922553ea27ad801ea51b7.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
