@@ -53,11 +53,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichaelPowell89/portfolio_github.git"
+    "url": "git+https://github.com/MichaelPowell89/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichaelPowell89/portfolio_github/issues"
+    "url": "https://github.com/MichaelPowell89/portfolio/issues"
   }
 }
