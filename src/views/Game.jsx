@@ -41,7 +41,7 @@ const Game = (props) => {
                 <Container> */}
                     <div className="scrollContent">
                         <h1 className="contentTitle">{workExamples[5].title}</h1>
-                        <div className="dictionary" onClick={handleChange('5')}>
+                        <div className="dictionary" onClick={handleChange('5')} onMouseOver={handleChange('5')}>
                             <div>
                                 <AFLE3Carousel
                                     image={props.image}
@@ -50,7 +50,7 @@ const Game = (props) => {
                         </div>
 
                         <h1 className="contentTitle">{workExamples[0].title}</h1>
-                        <div className="dictionary" onClick={handleChange('0')}>
+                        <div className="dictionary" onClick={handleChange('0')} onMouseOver={handleChange('0')}>
                             <div>
                                 <RugbyCarousel
                                     image={props.image}
@@ -59,7 +59,7 @@ const Game = (props) => {
                         </div>
 
                         <h1 className="contentTitle">{workExamples[1].title}</h1>
-                        <div className="dictionary" onClick={handleChange('1')}>
+                        <div className="dictionary" onClick={handleChange('1')} onMouseOver={handleChange('1')}>
                             <div>
                                 <AFLE2Carousel
                                     image={props.image}
@@ -68,7 +68,7 @@ const Game = (props) => {
                         </div>
 
                         <h1 className="contentTitle">{workExamples[3].title}</h1>
-                        <div className="dictionary" onClick={handleChange('3')}>
+                        <div className="dictionary" onClick={handleChange('3')} onMouseOver={handleChange('3')}>
                             <div>
                                 <CKCarousel
                                     image={props.image}
@@ -77,7 +77,7 @@ const Game = (props) => {
                         </div>
 
                         <h1 className="contentTitle">{workExamples[6].title}</h1>
-                        <div className="dictionary" onClick={handleChange('6')}>
+                        <div className="dictionary" onClick={handleChange('6')} onMouseOver={handleChange('6')}>
                             <div>
                                 <SlimeTimeCarousel
                                     image={props.image}
@@ -86,7 +86,7 @@ const Game = (props) => {
                         </div>
 
                         <h1 className="contentTitle">{workExamples[4].title}</h1>
-                        <div className="dictionary" onClick={handleChange('4')}>
+                        <div className="dictionary" onClick={handleChange('4')} onMouseOver={handleChange('4')}>
                             <div>
                                 <OGICarousel
                                     image={props.image}
@@ -95,7 +95,7 @@ const Game = (props) => {
                         </div>
 
                         <h1 className="contentTitle">{workExamples[2].title}</h1>
-                        <div className="dictionary" onClick={handleChange('2')}>
+                        <div className="dictionary" onClick={handleChange('2')} onMouseOver={handleChange('2')}>
                             <div style={{ marginBottom: "300px" }}>
                                 <TyCarousel
                                     image={props.image}
