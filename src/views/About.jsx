@@ -22,10 +22,10 @@ function About (){
                 <div className="imageContainer">
                     <img className="profileImage" src={profile} />
                     <div className="AboutContainer" style={{ width: "100%" }}>
-                        <p className="aboutMe">When I have a controller in my hand, I’m happy. With only 4 years in the industry, I am honored to have worked on of 3 AAA releases.
+                        <p className="aboutMe">When I have a controller in my hand, I’m happy. Within 4 years in the industry, I am honored to have worked on 3 AAA releases.
                         Regardless of the task, I bring the same work ethic wherever I go. Whether I am testing the latest build or researching and documenting different game mechanics from competitive titles,
                         my goal is to provide the best experience to the user. With the rapid pace that technology and games are growing, I strive to keep learning and growing my skills across different areas. 
-                        However, my true passion is understanding and predicting player behaviour through design and different branches of psychology.</p>
+                        However, my true passion is understanding and predicting player behaviour through different design practices and my education in psychology.</p>
                     </div>
                 </div>
                 <div className="AboutContainer">

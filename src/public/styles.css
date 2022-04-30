@@ -6,7 +6,7 @@
 
 body {
   animation: Gradient 15s ease infinite;
-  background: linear-gradient(117deg, rgb(0 24 34) 0%, rgb(32 0 0) 50%, rgb(9 32 0) 100%);
+  background: linear-gradient(117deg, #2f424a, #5c3a3a 50%, #46623b);
   background-size: 400% 400%;
   padding: 0 0px;
   width: 100%;
@@ -453,6 +453,12 @@ button:enabled:hover {
   padding: 50px 0 50px
 }
 
+@media (max-width: 1200px){
+  .ContactTitle{
+    padding-top: 80px; 
+    }
+  }
+
 .tableColumn {
   vertical-align: top;
   padding: 20px 30px 20px 0;
@@ -616,7 +622,7 @@ button:enabled:hover {
   height: 90px !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 212, 255, 0) 100%);
 }
 
 .navbar-nav {
