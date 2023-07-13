@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "226ea13d4da96de99ded",
-    "url": "/portfolio/static/css/main.4deaeaf3.chunk.css"
+    "revision": "2be488cb6d658bc8b40e",
+    "url": "/portfolio/static/css/main.8e967ede.chunk.css"
   },
   {
-    "revision": "226ea13d4da96de99ded",
-    "url": "/portfolio/static/js/main.226ea13d.chunk.js"
+    "revision": "2be488cb6d658bc8b40e",
+    "url": "/portfolio/static/js/main.2be488cb.chunk.js"
   },
   {
-    "revision": "d47d248f80db6ec2e267",
-    "url": "/portfolio/static/js/1.d47d248f.chunk.js"
+    "revision": "4e3eec0efd1bea118b1d",
+    "url": "/portfolio/static/js/1.4e3eec0e.chunk.js"
   },
   {
-    "revision": "9dda3e59e48e7f0896f1",
-    "url": "/portfolio/static/css/2.1cb504c2.chunk.css"
+    "revision": "7c4b4e006b11ebc91d18",
+    "url": "/portfolio/static/css/2.bb349379.chunk.css"
   },
   {
-    "revision": "9dda3e59e48e7f0896f1",
-    "url": "/portfolio/static/js/2.9dda3e59.chunk.js"
+    "revision": "7c4b4e006b11ebc91d18",
+    "url": "/portfolio/static/js/2.7c4b4e00.chunk.js"
   },
   {
-    "revision": "6a4a664e644808db3aa0",
-    "url": "/portfolio/static/js/runtime~main.6a4a664e.js"
+    "revision": "a59236e038d1528e6636",
+    "url": "/portfolio/static/js/runtime~main.a59236e0.js"
   },
   {
     "revision": "53f41cbb249858138d0b6c79e2ce7915",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/email.26c94a3d.png"
   },
   {
-    "revision": "8ec1a5bb871f0343bf8c3f6aaaeb778e",
-    "url": "/portfolio/static/media/CV_GameDesign.8ec1a5bb.pdf"
+    "revision": "9dfee6e34431a682e1b5880cf861666b",
+    "url": "/portfolio/static/media/Michael_Powell_CV_GameDesign.9dfee6e3.pdf"
   },
   {
     "revision": "6af8a012de1b5275743a5182c8c3654b",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/React.f81a6f37.png"
   },
   {
-    "revision": "c807b756db865703e9a73d8af91972f5",
+    "revision": "cfd19c06749cec5e5784544c97d546c4",
     "url": "/portfolio/index.html"
   }
 ];
