@@ -110,16 +110,3 @@ const Game = (props) => {
 }
 
 export default Game;
-
-// What are the 7 primitive JavaScript types?
-// 1. Undefined
-// 2. Null
-// 3. Strings
-// 4. Boolean
-// 5. numbers
-// 6. symbols
-// 7. bigint
-
-// Everything else in JavaScript is an OBJECT.
-// Yes, even arrays are objects.
-// Technically, functions are objects too (though there's some debate around this.)

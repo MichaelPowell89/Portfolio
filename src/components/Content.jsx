@@ -1,17 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function Content (props){
-  // const [isExpanded, setExpanded] = useState(false)
-
-  // function expand() {
-  //   setExpanded(true);
-  // }
-
-  // function contract() {
-  //   setExpanded(false);
-  // }
-
     return (
       <SRLWrapper>
         <div className="term" >
@@ -22,6 +12,3 @@ function Content (props){
 }
 
 export default Content;
-
-//onMouseOver={expand} onMouseOut={contract}
-// style={{transform: isExpanded ? "scale(1.1)" : "scale(1.0)"}}

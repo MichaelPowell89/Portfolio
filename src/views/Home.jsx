@@ -9,7 +9,7 @@ function Home (){
         <Container>
             <div className="homePage">
                 <div className="homeContainer" >
-                <Link to="/portfolio_github/gamedesign">
+                <Link to="/portfolio/games">
                    <img className="homeImage" src={gameDesign} alt=""/>
                    </Link>
                 </div>

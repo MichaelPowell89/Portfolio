@@ -14,79 +14,78 @@ import css from '../public/images/Experience/css.png'
 import js from '../public/images/Experience/js.png'
 import react from '../public/images/Experience/React.png'
 
+import copyConsts from "../copyConsts.json"
+
 function About (){
 
     return (
         <Container>
             <div className="aboutPage">
                 <div className="imageContainer">
-                    <img className="profileImage" src={profile} />
+                    <img className="profileImage" src={profile} alt="Profile"/>
                     <div className="AboutContainer" style={{ width: "100%" }}>
-                        <p className="aboutMe">When I have a controller in my hand, I’m happy. Within 4 years in the industry, I am honored to have worked on 3 AAA releases.
-                        Regardless of the task, I bring the same work ethic wherever I go. Whether I am testing the latest build or researching and documenting different game mechanics from competitive titles,
-                        my goal is to provide the best experience to the user. With the rapid pace that technology and games are growing, I strive to keep learning and growing my skills across different areas. 
-                        However, my true passion is understanding and predicting player behaviour through different design practices and my education in psychology.</p>
+                        <p className="aboutMe">{copyConsts.aboutMe}</p>
                     </div>
                 </div>
                 <div className="AboutContainer">
                     <col-4>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Unreal Engine!</Tooltip>}>
-                                <p><img className="experienceIcon unrealEngine" src={unrealEngine} alt="" /></p>
+                                <p><img className="experienceIcon unrealEngine" src={unrealEngine} alt="Unreal Engine" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">C++</Tooltip>}>
-                                <p><img className="experienceIcon" src={cplusplus} alt="" /></p>
+                                <p><img className="experienceIcon" src={cplusplus} alt="C++" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Unity</Tooltip>}>
-                                <p><img className="experienceIcon" src={unity} alt="" /></p>
+                                <p><img className="experienceIcon" src={unity} alt="Unity" /></p>
                             </OverlayTrigger>
                         </Row>
                     </col-4>
                     <col-4>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Adobe Photoshop</Tooltip>}>
-                                <p><img className="experienceIcon" src={photoshop} alt="" /></p>
+                                <p><img className="experienceIcon" src={photoshop} alt="Adobe Photoshop" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Adobe Illustrator</Tooltip>}>
-                                <p><img className="experienceIcon" src={illustrator} alt="" /></p>
+                                <p><img className="experienceIcon" src={illustrator} alt="Adobe Illustrator" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Adobe XD</Tooltip>}>
-                                <p><img className="experienceIcon" src={xd} alt="" /></p>
+                                <p><img className="experienceIcon" src={xd} alt="Adobe XD" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Maya</Tooltip>}>
-                                <p><img className="experienceIcon" src={maya} alt="" /></p>
+                                <p><img className="experienceIcon" src={maya} alt="Maya" /></p>
                             </OverlayTrigger>
                         </Row>
                     </col-4>
                     <col-4>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">HTML</Tooltip>}>
-                                <p><img className="experienceIcon" src={html} alt="" /></p>
+                                <p><img className="experienceIcon" src={html} alt="HTML" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">CSS</Tooltip>}>
-                                <p><img className="experienceIcon" src={css} alt="" /></p>
+                                <p><img className="experienceIcon" src={css} alt="CSS" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Javascript</Tooltip>}>
-                                <p><img className="experienceIcon" src={js} alt="" /></p>
+                                <p><img className="experienceIcon" src={js} alt="Javascript" /></p>
                             </OverlayTrigger>
                         </Row>
                         <Row>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">React</Tooltip>}>
-                                <p><img className="experienceIcon" src={react} alt="" /></p>
+                                <p><img className="experienceIcon" src={react} alt="React" /></p>
                             </OverlayTrigger>
                         </Row>
                     </col-4>
