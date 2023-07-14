@@ -31,7 +31,7 @@ const NavbarTest = () => {
 						<Link to="/portfolio/about"><img className="navbarLogo" src={about} alt=""/></Link>
 						<Link to="/portfolio/contact"><img className="navbarLogo" src={contact} alt=""/></Link>
 						<Nav.Link href={CV} download><h1 className="CV navbarLogo">CV</h1></Nav.Link>
-						<a href="https://www.linkedin.com/in/michael-powell-38870333"><img className="navbarLogo" src={linkedIn} alt=""/></a>
+						<a href="https://www.linkedin.com/in/michael-powell-38870333"><img className="instagramLogo navbarLogo" src={linkedIn} alt=""/></a>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
