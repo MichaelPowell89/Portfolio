@@ -731,6 +731,8 @@ button:enabled:hover {
 
 .navbar-toggler-icon{
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-nav {
@@ -739,9 +741,6 @@ button:enabled:hover {
   justify-content: space-between;
   align-items: center;
   flex: 0 0 30%;
-  /* flex-direction: row !important; */
-  /* justify-content: space-around; */
-  /* padding-top: 10px; */
 }
 
 .navbar-brand {
