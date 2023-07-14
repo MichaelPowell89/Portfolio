@@ -615,6 +615,7 @@ button:enabled:hover {
     margin: 10px 0 !important;
     max-height: inherit;
     margin-top: 20px !important;
+    overflow: visible !important;
   }
 
   .contentTitle {

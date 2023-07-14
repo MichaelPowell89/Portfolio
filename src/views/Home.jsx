@@ -9,7 +9,7 @@ function Home (){
         <Container>
             <div className="homePage">
                 <div className="homeContainer" >
-                <Link to="/portfolio/games">
+                <Link to="/portfolio/games" style={{zIndex: 1}}> 
                    <img className="homeImage" src={gameDesign} alt=""/>
                    </Link>
                 </div>
