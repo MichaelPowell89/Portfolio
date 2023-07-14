@@ -14,6 +14,10 @@ body {
   overflow: hidden;
 }
 
+body.navbar-open {
+  overflow: hidden;
+}
+
 @keyframes Gradient {
   0% {
     background-color: #2f424a;
@@ -94,8 +98,12 @@ ul.slider.animated {
   }
 
   .ContentPage {
-    padding: 0 !important;
+    padding-top: 2em;
   }
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
 .navbar-toggler{
@@ -386,6 +394,12 @@ a:hover,
   .imageContainer {
     max-width: 100% !important;
   }
+
+  .experienceIcon {
+    max-width: 60px !important;
+    max-height: 60px !important;
+    margin: 6px !important;
+  }
 }
 
 .imageContainer {
@@ -408,6 +422,13 @@ a:hover,
 .unrealEngine {
   background-color: white;
   border-radius: 50%;
+}
+
+.skillColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Contact Page */
@@ -512,7 +533,7 @@ button:enabled:hover {
 }
 
 @media (max-width: 1200px){
-.ContactTitle{
+.contactTitle{
   padding-top: 80px; 
   }
 }
@@ -523,13 +544,13 @@ button:enabled:hover {
 }
 
 .ContactContainer {
-  padding: 2.5% 0;
+  padding: 2em;
   background: #000000a8;
   border-radius: 2.5%;
   width: 50%;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-content: space-around;
   flex-direction: row;
@@ -538,7 +559,6 @@ button:enabled:hover {
 
 @media (max-width: 1200px) {
   .ContactContainer {
-    padding: 2.5% 0;
     background: #000000a8;
     border-radius: 20px;
     width: 100%;
@@ -591,6 +611,7 @@ button:enabled:hover {
 @media (max-width:1200px) {
   .ContentPage {
     flex-direction: column;
+    margin-bottom: 1000px;
   }
 
   .scrollContent {
@@ -674,6 +695,7 @@ button:enabled:hover {
 
 .card-body {
   text-align: left;
+  padding: 2em 2em !important;
 }
 
 
@@ -681,52 +703,45 @@ button:enabled:hover {
 /* ////////////////////////////////// */
 
 .navbar {
-  height: 90px !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  min-height: 90px;
+  align-items: flex-end !important;
 }
 
 @media (max-width:1200px) {
   .navbar{
     position: fixed !important;
     min-width: 100%;
-    height: inherit !important;
   }
 
   .navbar>.container {
+    align-items: flex-start !important;
+    min-height: 100vh;
     margin-top: 10px;
   }
 
   .navbar-nav{
     flex-direction: column !important;
-    padding-top: 1000px;
+    /* max-height: 50vh; */
   }
+
+  .navbarLogo{
+    margin: 1.3em;
+    min-width: 60px;  }
 }
 
 .navbar-toggler-icon{
-  vertical-align: inherit;
   transition: all 0.3s ease-in-out;
 }
 
-
-.navbarLogo{
-  margin: 0 2em 1em !important;
-}
-
-@media (max-width: 1200px) {
-  .navbarLogo {
-    margin: 30px 0 !important;
-  }
-  
-  img.navbarLogo {
-    max-width: 60px !important;
-  }
-}
-
 .navbar-nav {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 30%;
   /* flex-direction: row !important; */
-  justify-content: space-around;
-  padding-top: 10px;
+  /* justify-content: space-around; */
+  /* padding-top: 10px; */
 }
 
 .navbar-brand {
@@ -742,6 +757,7 @@ button:enabled:hover {
 
 .container {
   text-align: center;
+  width: 90vw !important;
 }
 
 .contactContainer {
@@ -768,7 +784,8 @@ img.navbarLogo {
 .CV{
   color: white;
   font-weight: 600;
-  margin-top: -5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
   font-size: 2.25em;
   transition: all 0.3s ease-in-out;
 }

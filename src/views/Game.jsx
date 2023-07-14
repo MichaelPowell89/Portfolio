@@ -24,7 +24,7 @@ const Game = (props) => {
         <SimpleReactLightbox>
             <div className="overlay" />
             <Container>
-                <Container className="ContentPage">
+                <div className="ContentPage">
                     <Card style={{ width: '18rem' }}>
                         <Card.Body>
                             <Card.Title>{workExamples[selectedTitle].title} - {workExamples[selectedTitle].ReleaseYear}</Card.Title>
@@ -103,7 +103,7 @@ const Game = (props) => {
                             </div>
                         </div>
                     </div>
-                </Container>
+                </div>
             </Container>
         </SimpleReactLightbox>
     )

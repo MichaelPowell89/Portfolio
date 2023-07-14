@@ -47,11 +47,11 @@ function ContactForm() {
   };
 
   return (
-    <div>
+    <div className="ContentPage">
       {contactForm ? (
         <Container>
             <div className="ContactContainer">
-                <h1 className="ContactTitle">{copyConsts.emailResponse}</h1>
+                <h1 className="contactTitle">{copyConsts.emailResponse}</h1>
             </div>
         </Container>
       ) : (
@@ -109,6 +109,9 @@ function ContactForm() {
                   <Row>
                     <p className="informationText">
                       {copyConsts.myEmailAddress}
+                    </p>                    
+                    <p className="informationText">
+                      {copyConsts.myEmailHost}
                     </p>
                   </Row>
                 </td>
