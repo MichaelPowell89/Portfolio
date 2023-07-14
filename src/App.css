@@ -706,7 +706,7 @@ button:enabled:hover {
   z-index: 1;
 }
 
-@media (max-width:1200px) {
+@media (max-width:990px) {
   .navbar {
     position: fixed !important;
     min-width: 100%;
@@ -745,7 +745,7 @@ button:enabled:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex: 0 0 30%;
+  flex: 0 0 50%;
 }
 
 .navbar-brand {
