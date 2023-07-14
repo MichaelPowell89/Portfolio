@@ -47,7 +47,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="ContentPage">
+    <>
       {contactForm ? (
         <Container>
             <div className="ContactContainer">
@@ -56,7 +56,7 @@ function ContactForm() {
         </Container>
       ) : (
         <>
-        <h1 className="ContactTitle">{copyConsts.CTA}</h1>
+        <h1 className="contactTitle">{copyConsts.CTA}</h1>
         <Container className="contactContainer">
           <div className="ContactContainer">
             <col-6>
@@ -207,7 +207,7 @@ function ContactForm() {
         </Container>
         </>
       )}
-    </div>
+    </>
   );
 }
 
