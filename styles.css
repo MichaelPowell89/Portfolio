@@ -14,6 +14,10 @@ body {
   overflow: hidden;
 }
 
+body.navbar-open {
+  overflow: hidden;
+}
+
 @keyframes Gradient {
   0% {
     background-color: #2f424a;
@@ -33,9 +37,11 @@ body {
 }
 
 @media (max-width:1620px) {
-  body{
+  body {
     overflow: visible
-  };
+  }
+
+  ;
 }
 
 /* //Lightbox controls */
@@ -55,8 +61,7 @@ body {
   display: none !important;
 }
 
-.SRLPrevButton
-{
+.SRLPrevButton {
   display: none !important;
 }
 
@@ -65,15 +70,15 @@ body {
 }
 
 /* //Carousel */
-.control-dots{
+.control-dots {
   display: none !important;
 }
 
-.carousel-status{
+.carousel-status {
   display: none !important;
 }
 
-.thumbs-wrapper{
+.thumbs-wrapper {
   display: none !important;
 }
 
@@ -81,30 +86,33 @@ ul.slider.animated {
   display: flex;
 }
 
-.carousel .slide{
+.carousel .slide {
   padding: 0 10px;
   min-width: 30em !important;
 }
 
-@media (max-width: 1200px)
-{
-  .carousel .slide{
+@media (max-width: 1200px) {
+  .carousel .slide {
     padding: 0;
     min-width: 25em !important;
   }
 
   .ContentPage {
-    padding: 0 !important;
+    padding-top: 2em;
   }
 }
 
-.navbar-toggler{
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
   border-radius: 25em !important;
-  border-color: rgba(255,255,255,1) !important;
+  border-color: rgba(255, 255, 255, 1) !important;
   /* background-color: #1c1b14 !important; */
 }
 
-.selected{
+.selected {
   padding-left: 0 !important;
 }
 
@@ -115,12 +123,12 @@ ul.slider.animated {
   z-index: -1;
 }
 
-.menuOverlay{
+.menuOverlay {
   position: absolute;
   height: 130vh;
   width: 100vw;
   z-index: -1;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%,rgba(0, 212, 255, 0) 500%);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 212, 255, 0) 500%);
 }
 
 footer {
@@ -226,17 +234,17 @@ a:hover,
     margin-bottom: 15%;
   }
 
-  .dictionary{
+  .dictionary {
     opacity: 1 !important;
   }
 
-  .term{
+  .term {
     max-width: 100vw;
     margin-right: 0;
   }
 }
 
-.term{
+.term {
   margin-right: 10px;
 }
 
@@ -386,6 +394,12 @@ a:hover,
   .imageContainer {
     max-width: 100% !important;
   }
+
+  .experienceIcon {
+    max-width: 60px !important;
+    max-height: 60px !important;
+    margin: 6px !important;
+  }
 }
 
 .imageContainer {
@@ -408,6 +422,13 @@ a:hover,
 .unrealEngine {
   background-color: white;
   border-radius: 50%;
+}
+
+.skillColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Contact Page */
@@ -511,9 +532,9 @@ button:enabled:hover {
   padding: 50px 0 50px
 }
 
-@media (max-width: 1200px){
-.ContactTitle{
-  padding-top: 80px; 
+@media (max-width: 1200px) {
+  .contactTitle {
+    padding-top: 80px;
   }
 }
 
@@ -523,13 +544,13 @@ button:enabled:hover {
 }
 
 .ContactContainer {
-  padding: 2.5% 0;
+  padding: 2em;
   background: #000000a8;
   border-radius: 2.5%;
   width: 50%;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-content: space-around;
   flex-direction: row;
@@ -538,7 +559,6 @@ button:enabled:hover {
 
 @media (max-width: 1200px) {
   .ContactContainer {
-    padding: 2.5% 0;
     background: #000000a8;
     border-radius: 20px;
     width: 100%;
@@ -591,6 +611,7 @@ button:enabled:hover {
 @media (max-width:1200px) {
   .ContentPage {
     flex-direction: column;
+    margin-bottom: 1000px;
   }
 
   .scrollContent {
@@ -599,7 +620,7 @@ button:enabled:hover {
     margin-top: 20px !important;
   }
 
-  .contentTitle{
+  .contentTitle {
     font-size: 1.25em;
   }
 }
@@ -646,11 +667,11 @@ button:enabled:hover {
     padding: 0 !important;
   }
 
-  .card-title{
+  .card-title {
     font-size: 1.25em !important;
   }
 
-  .card-text{
+  .card-text {
     font-size: 1.25em !important;
   }
 }
@@ -674,6 +695,7 @@ button:enabled:hover {
 
 .card-body {
   text-align: left;
+  padding: 2em 2em !important;
 }
 
 
@@ -681,52 +703,50 @@ button:enabled:hover {
 /* ////////////////////////////////// */
 
 .navbar {
-  height: 90px !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  min-height: 90px;
+  align-items: flex-end !important;
 }
 
 @media (max-width:1200px) {
-  .navbar{
+  .navbar {
     position: fixed !important;
     min-width: 100%;
-    height: inherit !important;
   }
 
   .navbar>.container {
+    align-items: flex-start !important;
+    min-height: 100vh;
     margin-top: 10px;
   }
 
-  .navbar-nav{
+  .navbar-nav {
     flex-direction: column !important;
-    padding-top: 1000px;
+    /* max-height: 50vh; */
   }
-}
 
-.navbar-toggler-icon{
-  vertical-align: inherit;
-  transition: all 0.3s ease-in-out;
-}
-
-
-.navbarLogo{
-  margin: 0 2em 1em !important;
-}
-
-@media (max-width: 1200px) {
   .navbarLogo {
-    margin: 30px 0 !important;
+    margin: 1.3em;
+    min-width: 60px;
   }
-  
-  img.navbarLogo {
-    max-width: 60px !important;
-  }
+}
+
+.instagramLogo {
+  background-color: white;
+  border-radius: 15%;
+}
+
+.navbar-toggler-icon {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-nav {
-  /* flex-direction: row !important; */
-  justify-content: space-around;
-  padding-top: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 30%;
 }
 
 .navbar-brand {
@@ -742,6 +762,7 @@ button:enabled:hover {
 
 .container {
   text-align: center;
+  width: 90vw !important;
 }
 
 .contactContainer {
@@ -765,15 +786,16 @@ img.navbarLogo {
   max-width: 40px;
 }
 
-.CV{
+.CV {
   color: white;
   font-weight: 600;
-  margin-top: -5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
   font-size: 2.25em;
   transition: all 0.3s ease-in-out;
 }
 
-.summary{
+.summary {
   font-size: .9em;
   font-style: italic;
 }
@@ -790,7 +812,7 @@ img.navbarLogo {
   background: #000000a8;
   border-radius: 2.5%;
   min-width: 50%;
-  display: -webkit-box; 
+  display: -webkit-box;
   -webkit-line-clamp: 2;
   display: flex;
   flex-direction: column;
