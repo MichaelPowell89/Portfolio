@@ -18,8 +18,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<About />} />
+          <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/games" element={<Game />} />
           {/* <Route path="/portfolio_github/webdesign" element={<Web/>}/> */}
           <Route path="/portfolio/about" element={<About />} />
