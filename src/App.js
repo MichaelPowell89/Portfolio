@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/games" element={<Game />} />
-          <Route path="/portfolio_github/webdesign" element={<Web/>}/>
+          <Route path="/portfolio/webdesign" element={<Web/>}/>
           <Route path="/portfolio/about" element={<About />} />
           <Route path="/portfolio/contact" element={<Contact />} />
           <Route path="/portfolio/404" element={<NotFoundComponent />} />
