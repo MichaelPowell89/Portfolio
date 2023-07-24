@@ -1,43 +1,47 @@
 self.__precacheManifest = [
   {
-    "revision": "7c5dba2326ec95f3f97c",
-    "url": "/portfolio/static/css/main.e973c300.chunk.css"
+    "revision": "7d25a3feed2bd175068e",
+    "url": "/portfolio/static/css/main.b1218eb2.chunk.css"
   },
   {
-    "revision": "7c5dba2326ec95f3f97c",
-    "url": "/portfolio/static/js/main.7c5dba23.chunk.js"
+    "revision": "7d25a3feed2bd175068e",
+    "url": "/portfolio/static/js/main.7d25a3fe.chunk.js"
   },
   {
-    "revision": "4e3eec0efd1bea118b1d",
-    "url": "/portfolio/static/js/1.4e3eec0e.chunk.js"
+    "revision": "7cf214d6c915511e8fbb",
+    "url": "/portfolio/static/js/1.7cf214d6.chunk.js"
   },
   {
-    "revision": "4141d4c397a00096d7f4",
-    "url": "/portfolio/static/css/2.bb349379.chunk.css"
+    "revision": "e557054454cf604d70dc",
+    "url": "/portfolio/static/css/2.7da1ee59.chunk.css"
   },
   {
-    "revision": "4141d4c397a00096d7f4",
-    "url": "/portfolio/static/js/2.4141d4c3.chunk.js"
+    "revision": "e557054454cf604d70dc",
+    "url": "/portfolio/static/js/2.e5570544.chunk.js"
   },
   {
-    "revision": "a59236e038d1528e6636",
-    "url": "/portfolio/static/js/runtime~main.a59236e0.js"
+    "revision": "526b4e4dccba13d23532",
+    "url": "/portfolio/static/js/runtime~main.526b4e4d.js"
   },
   {
     "revision": "53f41cbb249858138d0b6c79e2ce7915",
     "url": "/portfolio/static/media/controller.53f41cbb.png"
   },
   {
+    "revision": "75074583e03450e82c557c77e1f57891",
+    "url": "/portfolio/static/media/website.75074583.png"
+  },
+  {
     "revision": "88fccf04af5dcbe78b90387c7a019b75",
     "url": "/portfolio/static/media/Xbox.88fccf04.png"
   },
   {
-    "revision": "30faa35024eb00c9b3ad62a7a39d68f9",
-    "url": "/portfolio/static/media/Steam.30faa350.png"
-  },
-  {
     "revision": "e2532f0a5cc0bee8ca3679ef3b150ca7",
     "url": "/portfolio/static/media/websiteWhite.e2532f0a.png"
+  },
+  {
+    "revision": "30faa35024eb00c9b3ad62a7a39d68f9",
+    "url": "/portfolio/static/media/Steam.30faa350.png"
   },
   {
     "revision": "47305402a5e102588c9946a65939438a",
@@ -92,7 +96,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/React.f81a6f37.png"
   },
   {
-    "revision": "c9d9823fe8e27e2930a002f6abc10a49",
+    "revision": "3ea790b73242420a1a582d103073b004",
     "url": "/portfolio/index.html"
   }
 ];
