@@ -1,121 +1,101 @@
-import React, { useState } from 'react';
-import RugbyCarousel from '../components/Carousel/RugbyCarousel'
-import AFLE2Carousel from '../components/Carousel/AFLE2Carousel'
-import AFLE3Carousel from '../components/Carousel/AFLE3Carousel'
-import TyCarousel from '../components/Carousel/TyCarousel'
-import CKCarousel from '../components/Carousel/CKCarousel'
-import OGICarousel from '../components/Carousel/OGICarousel'
-import SlimeTimeCarousel from '../components/Carousel/SlimeTimeCarousel'
-import workExamples from "../workExamples"
-import { Card, Container } from 'react-bootstrap';
+import React, { useState } from "react";
+import RugbyCarousel from "../components/Carousel/RugbyCarousel";
+import AFLE2Carousel from "../components/Carousel/AFLE2Carousel";
+import AFLE3Carousel from "../components/Carousel/AFLE3Carousel";
+import TyCarousel from "../components/Carousel/TyCarousel";
+import CKCarousel from "../components/Carousel/CKCarousel";
+import OGICarousel from "../components/Carousel/OGICarousel";
+import SlimeTimeCarousel from "../components/Carousel/SlimeTimeCarousel";
+import workExamples from "../workExamples";
+import { Card, Container } from "react-bootstrap";
 
 const Web = (props) => {
+  const [selectedTitle, newTitle] = useState(7);
 
-    const [selectedTitle, newTitle] = useState(7);
+  function handleChange(value) {
+    return function() {
+      newTitle(value);
+    };
+  }
 
-    function handleChange(value) {
-        return function () {
-            newTitle(value);
-        }
-    }
+  return (
+    <div>
+      <div className="overlay" />
+      <Container className="ContentPage">
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <a href={workExamples[7].link}>
+              <Card.Img
+                src={workExamples[7].coverImage}
+                alt="Example image" // You can provide an alt attribute for accessibility
+              />
+            </a>
+          </Card.Body>
+          <Card.Body>
+            <Card.Title>
+              {workExamples[7].title} - {workExamples[7].ReleaseYear}
+            </Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">
+              {workExamples[7].position}
+            </Card.Subtitle>
+            <Card.Text>{workExamples[7].description}</Card.Text>
+            <Card.Link href="#">{workExamples[7].platform1}</Card.Link>
+            <Card.Link href="#">{workExamples[7].platform2}</Card.Link>
+            <Card.Link href="#">{workExamples[7].platform3}</Card.Link>
+            <Card.Link href="#">{workExamples[7].platform4}</Card.Link>
+          </Card.Body>
+        </Card>
 
-    return (
-        <div>
-            <div className="overlay" />
-                <Container className="ContentPage">
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Body>
-                            <Card.Title>{workExamples[selectedTitle].title} - {workExamples[selectedTitle].ReleaseYear}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{workExamples[selectedTitle].position}</Card.Subtitle>
-                            <Card.Text>{workExamples[selectedTitle].description}</Card.Text>
-                            <Card.Link href="#">{workExamples[selectedTitle].platform1}</Card.Link>
-                            <Card.Link href="#">{workExamples[selectedTitle].platform2}</Card.Link>
-                            <Card.Link href="#">{workExamples[selectedTitle].platform3}</Card.Link>
-                            <Card.Link href="#">{workExamples[selectedTitle].platform4}</Card.Link>
-                        </Card.Body>
-                    </Card>
-                    
-                    <div className="scrollContent">
-                        <h1 className="contentTitle">{workExamples[5].title}</h1>
-                        <div className="dictionary" onClick={handleChange('5')}>
-                            <div>
-                                <AFLE3Carousel
-                                    image={props.image}
-                                />
-                            </div>
-                        </div>
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <a href={workExamples[8].link}>
+              <Card.Img
+                src={workExamples[8].coverImage}
+                alt="Example image" // You can provide an alt attribute for accessibility
+              />
+            </a>{" "}
+          </Card.Body>
+          <Card.Body>
+            <Card.Title>
+              {workExamples[8].title} - {workExamples[8].ReleaseYear}
+            </Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">
+              {workExamples[8].position}
+            </Card.Subtitle>
+            <Card.Text>{workExamples[8].description}</Card.Text>
+            <Card.Link href="#">{workExamples[8].platform1}</Card.Link>
+            <Card.Link href="#">{workExamples[8].platform2}</Card.Link>
+            <Card.Link href="#">{workExamples[8].platform3}</Card.Link>
+            <Card.Link href="#">{workExamples[8].platform4}</Card.Link>
+          </Card.Body>
+        </Card>
 
-                        <h1 className="contentTitle">{workExamples[0].title}</h1>
-                        <div className="dictionary" onClick={handleChange('0')}>
-                            <div>
-                                <RugbyCarousel
-                                    image={props.image}
-                                    backgroundImage = {props.backgroundImage}
-                                />
-                            </div>
-                        </div>
-
-                        <h1 className="contentTitle">{workExamples[1].title}</h1>
-                        <div className="dictionary" onClick={handleChange('1')}>
-                            <div>
-                                <AFLE2Carousel
-                                    image={props.image}
-                                />
-                            </div>
-                        </div>
-
-                        <h1 className="contentTitle">{workExamples[2].title}</h1>
-                        <div className="dictionary" onClick={handleChange('2')}>
-                            <div>
-                                <TyCarousel
-                                    image={props.image}
-                                />
-                            </div>
-                        </div>
-
-                        <h1 className="contentTitle">{workExamples[3].title}</h1>
-                        <div className="dictionary" onClick={handleChange('3')}>
-                            <div>
-                                <CKCarousel
-                                    image={props.image}
-                                />
-                            </div>
-                        </div>
-
-                        <h1 className="contentTitle">{workExamples[6].title}</h1>
-                        <div className="dictionary" onClick={handleChange('6')}>
-                            <div>
-                                <SlimeTimeCarousel
-                                    ChangeBackground={props.image}
-                                />
-                            </div>
-                        </div>
-
-                        <h1 className="contentTitle">{workExamples[4].title}</h1>
-                        <div className="dictionary" onClick={handleChange('4')}>
-                            <div style={{ marginBottom: "300px" }}>
-                                <OGICarousel
-                                    ChangeBackground={props.image}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </Container>
-        </div>
-    )
-}
+        <Card style={{ width: "18rem" }}>
+          <Card.Body>
+            <a href={workExamples[9].link}>
+              <Card.Img
+                src={workExamples[9].coverImage}
+                alt="Example image" // You can provide an alt attribute for accessibility
+              />
+            </a>{" "}
+          </Card.Body>
+          <Card.Body>
+            <Card.Title>
+              {workExamples[9].title} - {workExamples[9].ReleaseYear}
+            </Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">
+              {workExamples[9].position}
+            </Card.Subtitle>
+            <Card.Text>{workExamples[9].description}</Card.Text>
+            <Card.Link href="#">{workExamples[9].platform1}</Card.Link>
+            <Card.Link href="#">{workExamples[9].platform2}</Card.Link>
+            <Card.Link href="#">{workExamples[9].platform3}</Card.Link>
+            <Card.Link href="#">{workExamples[9].platform4}</Card.Link>
+          </Card.Body>
+        </Card>
+      </Container>
+    </div>
+  );
+};
 
 export default Web;
-
-// What are the 7 primitive JavaScript types?
-// 1. Undefined
-// 2. Null
-// 3. Strings
-// 4. Boolean
-// 5. numbers
-// 6. symbols
-// 7. bigint
-
-// Everything else in JavaScript is an OBJECT.
-// Yes, even arrays are objects.
-// Technically, functions are objects too (though there's some debate around this.)

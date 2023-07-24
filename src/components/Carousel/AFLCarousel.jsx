@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import Content from '../Content'
 import AFL from "../../AFL"
-import defaultProps from "react-slick/lib/default-props";
 
 export default function SimpleSlider() {
   var settings = {

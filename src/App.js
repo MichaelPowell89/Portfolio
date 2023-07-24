@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useParams} from 'reac
 import Navbar from './components/Navbar.jsx';
 import Home from './views/Home.jsx';
 import Game from './views/Game.jsx';
-// import Web from "./views/Web.jsx"
+import Web from "./views/Web.jsx"
 
 import About from './views/About.jsx';
 import Contact from './views/Contact.jsx';
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/games" element={<Game />} />
-          {/* <Route path="/portfolio_github/webdesign" element={<Web/>}/> */}
+          <Route path="/portfolio_github/webdesign" element={<Web/>}/>
           <Route path="/portfolio/about" element={<About />} />
           <Route path="/portfolio/contact" element={<Contact />} />
           <Route path="/portfolio/404" element={<NotFoundComponent />} />

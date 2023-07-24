@@ -131,10 +131,11 @@ const workExamples = [
       Link: "https://simonesullivancelebrant.com/",
       position: <h5 className="positionDescription">Web Developer</h5>,
       description: <ul>
-        <li>Created a website from start to finish using HTML, CSS and JavaScript</li>
+        <li>Created a website from start to finish using HTML, CSS and JavaScript and released using BlueHost</li>
         <li>Maintain website for regular servicing and updates</li>
       </ul>,
-      platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>
+      platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
+      coverImage: <img src="./images/Games/Web/Celebrant.png"/>
     },
     {
       id: 9,
@@ -146,7 +147,21 @@ const workExamples = [
         <li>Created a website from start to finish using Squarespace with additional CSS and javascript implementations</li>
         <li>Maintain website as business continues to grow. Regular sanity testing for updates to policies.</li>
       </ul>,
-      platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>
+      platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
+      coverImage: <img src="./images/Games/Web/RafikiYangu.png"/>
+    },
+    {
+      id: 10,
+      title: "Centr",
+      ReleaseYear: "2023",
+      Link: "https://www.centr.com/",
+      position: <h5 className="positionDescription">QA Engineer</h5>,
+      description: <ul>
+        <li>Performed scheduled automation tests using Github for CI/CD integration.</li>
+        <li>Regurarly assisted in resolving issues and completing web tasks using React and NextJS.</li>
+      </ul>,
+      platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
+      coverImage: <img src="./images/Games/Web/Centr.png" alt="Cover Image" />
     }
   ];
   

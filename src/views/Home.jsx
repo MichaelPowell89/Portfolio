@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import gameDesign from "../public/images/controller.png"
-// import website from "../public/images/website.png"
+import website from "../public/images/website.png"
 
 function Home (){
     return (
@@ -13,11 +13,11 @@ function Home (){
                    <img className="homeImage" src={gameDesign} alt=""/>
                    </Link>
                 </div>
-                {/* <div className="homeContainer">
-                <a href="/webdesign">
+                <div className="homeContainer">
+                <a href="/portfolio/webdesign">
                     <img className="homeImage" src={website}/>
                 </a>
-                </div> */}
+                </div>
             </div>
         </Container>
     )

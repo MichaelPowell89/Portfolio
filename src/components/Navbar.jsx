@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import gameDesign from "../public/images/controller.png"
-// import webDesign from "../public/images/website.png"
+import webDesign from "../public/images/website.png"
 import about from "../public/images/man.png"
 import contact from "../public/images/email.png"
 import linkedIn from "../public/images/linkedin.png"
@@ -27,7 +27,7 @@ const NavbarTest = () => {
 					</Nav> */}
 					<Nav>
 						<Link to="/portfolio/games"><img className="navbarLogo" src={gameDesign} alt="" /></Link>
-						{/* <Nav.Link href="/portfolio_github/webdesign"><img className="navbarLogo" src={webDesign} alt=""/></Nav.Link> */}
+						<Nav.Link href="/portfolio_github/webdesign"><img className="navbarLogo" src={webDesign} alt=""/></Nav.Link>
 						<Link to="/portfolio/about"><img className="navbarLogo" src={about} alt=""/></Link>
 						<Link to="/portfolio/contact"><img className="navbarLogo" src={contact} alt=""/></Link>
 						<Nav.Link href={CV} download><h1 className="CV navbarLogo">CV</h1></Nav.Link>
