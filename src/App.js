@@ -20,8 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Home />} />
           <Route path="/portfolio/games" element={<Game />} />
-          <Route path="/portfolio/web" element={<Web/>}/>
-          <Route path="/portfolio/about" element={<About />} />
+          {/* <Route path="/portfolio/web" element={<Web/>}/> */}
+          <Route path="/portfolio/web" element={<About />} />
           <Route path="/portfolio/contact" element={<Contact />} />
           <Route path="/portfolio/404" element={<NotFoundComponent />} />
           <Route path="/portfolio/*" element={<Navigate to="/portfolio/404"/>}/>
