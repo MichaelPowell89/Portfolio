@@ -135,7 +135,6 @@ const workExamples = [
       <li>Demonstrated ongoing commitment to website maintenance, ensuring consistent servicing and timely updates to optimize user experience and functionality.</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
-      image: "../public/images/Games/Web/Celebrant.png"
     },
     {
       id: 9,
@@ -148,7 +147,6 @@ const workExamples = [
         <li>Assume responsibility for continuous website upkeep and seamless expansion in tandem with the business's growth, diligently conducting regular sanity testing to validate policy updates and preserve optimal performance.</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
-      image: "../public/images/Games/Web/RafikiYangu.png"
     },
     {
       id: 10,
@@ -161,7 +159,6 @@ const workExamples = [
         <li>Actively contributed to issue resolution and proficiently accomplished various web tasks using React and NextJS, consistently delivering high-quality solutions.</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
-      image: "../public/images/Games/Web/Centr.png"
     }
   ];
   

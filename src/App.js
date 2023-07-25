@@ -5,7 +5,6 @@ import Navbar from './components/Navbar.jsx';
 import Home from './views/Home.jsx';
 import Game from './views/Game.jsx';
 import Web from "./views/Web.jsx"
-
 import About from './views/About.jsx';
 import Contact from './views/Contact.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
