@@ -148,7 +148,7 @@ const workExamples = [
         <li>Assume responsibility for continuous website upkeep and seamless expansion in tandem with the business's growth, diligently conducting regular sanity testing to validate policy updates and preserve optimal performance.</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
-      image: "./images/Games/Web/RafikiYanfu.png"
+      image: "./images/Games/Web/RafikiYangu.png"
     },
     {
       id: 10,
