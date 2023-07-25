@@ -66,7 +66,7 @@ function ContactForm() {
                     <p className="informationTitle">
                       <img
                         className="contactIcon"
-                        src="../images/contactLocation.png"
+                        src="./images/contactLocation.png"
                         alt=""
                       />
                       {copyConsts.addressTitle}
@@ -83,7 +83,7 @@ function ContactForm() {
                     <p className="informationTitle">
                       <img
                         className="contactIcon"
-                        src="../images/contactPhone.png"
+                        src="./images/contactPhone.png"
                         alt=""
                       />
                       {copyConsts.phoneTitle}
@@ -100,7 +100,7 @@ function ContactForm() {
                     <p className="informationTitle">
                       <img
                         className="contactIcon"
-                        src="../images/contactEmail.png"
+                        src="./images/contactEmail.png"
                         alt=""
                       />
                       {copyConsts.myEmailTitle}
@@ -122,7 +122,7 @@ function ContactForm() {
                     <p className="informationTitle">
                       <img
                         className="contactIcon"
-                        src="../images/linkedinOutline.png"
+                        src="./images/linkedinOutline.png"
                         style={{ paddingBottom: "15px" }}
                         alt=""
                       />
