@@ -6,8 +6,10 @@ const Web = () => {
   const generateCard = (index) => {
     const example = workExamples[index];
     return (
+      <>
+      <div style={{flex: 1}}/>
       <Card key={index}>
-      <Card.Body>
+      <Card.Body href={example.link}>
         <Card.Img src={example.image} alt={example.title}/>
       </Card.Body>
         <Card.Body>
@@ -20,6 +22,7 @@ const Web = () => {
           <Card.Text>{example.description}</Card.Text>
         </Card.Body>
       </Card>
+      </>
     );
   };
 

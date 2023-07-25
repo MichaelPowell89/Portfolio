@@ -648,6 +648,7 @@ button:enabled:hover {
   position: sticky !important;
   top: 20px;
   text-align: left;
+  flex: 1;
 }
 
 @media (max-width: 1200px) {
@@ -845,4 +846,11 @@ img.navbarLogo {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1400px) {
+  .webPage {
+    flex-direction: column;
+  }
 }
