@@ -14,7 +14,7 @@ function Home (){
                    </Link>
                 </div>
                 <div className="homeContainer">
-                <a href="/portfolio/webdesign">
+                <a href="/portfolio/web">
                     <img className="homeImage" src={website}/>
                 </a>
                 </div>
