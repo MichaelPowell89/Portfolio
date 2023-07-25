@@ -35,7 +35,7 @@ const Web = () => {
     <>
       <div className="overlay" />
       <Container className="ContentPage webPage">
-        <Row>
+        <Row style={{'--bs-gutter-y': '1.5em'}}>
           {[7, 8, 9].map((index) => generateCard(index))}
         </Row>
       </Container>
