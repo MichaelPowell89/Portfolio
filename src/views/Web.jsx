@@ -7,14 +7,6 @@ const Web = () => {
     const example = workExamples[index];
     return (
       <Card key={index}>
-        {/* <Card.Body>
-          <a href={example.link}>
-            <Card.Img
-              src={example.image}
-              alt={example.title}
-            />
-          </a>
-        </Card.Body> */}
         <Card.Body>
           <Card.Title>
             {example.title} - {example.ReleaseYear}
