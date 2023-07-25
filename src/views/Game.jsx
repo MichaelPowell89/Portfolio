@@ -56,14 +56,14 @@ const toggleAccordion = (titleIndex) => {
       <>
             {mobile ? (
               <div>
-                <h1 className="contentTitle mobileContentTitle">
+                <h2 className="contentTitle mobileContentTitle">
                   {workExamples[titleIndex].title}
                   <button
                     onClick={() => toggleAccordion(titleIndex)}
                   className="accordion">
                     <DropdownArrow isOpen={openAccordion === titleIndex} />
                   </button>
-                </h1>
+                </h2>
                 {openAccordion === titleIndex && (
                   <div className="dictionary">
                     <CarouselComponent

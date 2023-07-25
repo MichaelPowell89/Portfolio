@@ -332,7 +332,7 @@ a:hover,
   }
 
   .homeContainer {
-    margin: 100px !important;
+    margin: 25px !important;
     width: fit-content;
     margin: auto;
   }
@@ -344,15 +344,6 @@ a:hover,
   border-radius: 25px;
   height: fit-content;
   margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: space-around;
-  flex-direction: row;
-}
-
-.homeImage {
-  height: 200px;
 }
 
 /* AboutPage */
@@ -365,7 +356,6 @@ a:hover,
 }
 
 .aboutMe {
-  font-size: 1.25em;
   color: white;
   line-height: 2.25em;
 }
@@ -410,7 +400,6 @@ a:hover,
 
 .imageContainer {
   max-width: 50%;
-  /* margin: 50px 0; */
 }
 
 .profileImage {
@@ -673,14 +662,6 @@ button:enabled:hover {
   .card-link {
     padding: 0 !important;
   }
-
-  .card-title {
-    font-size: 1.25em !important;
-  }
-
-  .card-text {
-    font-size: 1.25em !important;
-  }
 }
 
 .card-link {
@@ -688,16 +669,8 @@ button:enabled:hover {
   padding: 0 1em;
 }
 
-.card-title {
-  font-size: 2em !important;
-}
-
 .card-subtitle {
   font-size: 2em !important;
-}
-
-.card-text {
-  font-size: 1.5em;
 }
 
 .gameCard {
