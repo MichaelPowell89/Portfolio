@@ -131,11 +131,11 @@ const workExamples = [
       Link: "https://simonesullivancelebrant.com/",
       position: <h5 className="positionDescription">Web Developer</h5>,
       description: <ul>
-        <li>Created a website from start to finish using HTML, CSS and JavaScript and released using BlueHost</li>
-        <li>Maintain website for regular servicing and updates</li>
+      <li>Successfully developed a comprehensive website utilizing HTML, CSS, and JavaScript, and deployed it through the BlueHost platform.</li>
+      <li>Demonstrated ongoing commitment to website maintenance, ensuring consistent servicing and timely updates to optimize user experience and functionality.</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
-      coverImage: <img src="./images/Games/Web/Celebrant.png"/>
+      image: "../public/images/Games/Web/Celebrant.png"
     },
     {
       id: 9,
@@ -144,11 +144,11 @@ const workExamples = [
       Link: "https://www.rafikiyangu.com.au/",
       position: <h5 className="positionDescription">Web Developer</h5>,
       description: <ul>
-        <li>Created a website from start to finish using Squarespace with additional CSS and javascript implementations</li>
-        <li>Maintain website as business continues to grow. Regular sanity testing for updates to policies.</li>
+        <li>Orchestrated the end-to-end development of a feature-rich website leveraging Squarespace as the foundational platform, expertly incorporating supplementary CSS and JavaScript enhancements.</li>
+        <li>Assume responsibility for continuous website upkeep and seamless expansion in tandem with the business's growth, diligently conducting regular sanity testing to validate policy updates and preserve optimal performance.</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
-      coverImage: <img src="./images/Games/Web/RafikiYangu.png"/>
+      image: "../public/images/Games/Web/RafikiYangu.png"
     },
     {
       id: 10,
@@ -157,11 +157,11 @@ const workExamples = [
       Link: "https://www.centr.com/",
       position: <h5 className="positionDescription">QA Engineer</h5>,
       description: <ul>
-        <li>Performed scheduled automation tests using Github for CI/CD integration.</li>
-        <li>Regurarly assisted in resolving issues and completing web tasks using React and NextJS.</li>
+        <li>Executed meticulously scheduled automation tests, skillfully integrating them into Github for a seamless CI/CD integration process.</li>
+        <li>Actively contributed to issue resolution and proficiently accomplished various web tasks using React and NextJS, consistently delivering high-quality solutions.</li>
       </ul>,
       platform1: <div className="platformLogo"><img width='50px' height='50px' src={website} alt=""/></div>,
-      coverImage: <img src="./images/Games/Web/Centr.png" alt="Cover Image" />
+      image: "../public/images/Games/Web/Centr.png"
     }
   ];
   
