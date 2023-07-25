@@ -27,7 +27,7 @@ const NavbarTest = () => {
 					</Nav> */}
 					<Nav>
 						<Link to="/portfolio/games"><img className="navbarLogo" src={gameDesign} alt="" /></Link>
-						<Nav.Link href="/portfolio/webdesign"><img className="navbarLogo" src={webDesign} alt=""/></Nav.Link>
+						<Link to="/portfolio/web"><img className="navbarLogo" src={webDesign} alt=""/></Link>
 						<Link to="/portfolio/about"><img className="navbarLogo" src={about} alt=""/></Link>
 						<Link to="/portfolio/contact"><img className="navbarLogo" src={contact} alt=""/></Link>
 						<Nav.Link href={CV} download><h1 className="CV navbarLogo">CV</h1></Nav.Link>
