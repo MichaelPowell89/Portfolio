@@ -14,7 +14,7 @@ const Web = () => {
             <Card.Img
               src={example.image}
               alt={example.title}
-              style={{ borderRadius: "5% 5% 0 0" }}
+              style={{ borderRadius: "2em 2em 0 0" }}
             />
           </Card.Body>
           <Card.Body>
@@ -34,7 +34,7 @@ const Web = () => {
   return (
     <>
       <div className="overlay" />
-      <Container className="ContentPage webPage">
+      <Container className="ContentPage">
         <Row style={{'--bs-gutter-y': '1.5em'}}>
           {[7, 8, 9].map((index) => generateCard(index))}
         </Row>

@@ -11,7 +11,20 @@ body {
   width: 100%;
   font-family: 'Spartan', sans-serif !important;
   color: white;
-  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background:#555
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #bdbaba;
+  border-radius: 2em;
 }
 
 body.navbar-open {
@@ -20,19 +33,19 @@ body.navbar-open {
 
 @keyframes Gradient {
   0% {
-    background-color: #2f424a;
+    background-color: #091d25;
   }
 
   25% {
-    background-color: #5c3a3a;
+    background-color: #251a0a;
   }
 
   50% {
-    background-color: #46623b;
+    background-color: #112709;
   }
 
   100% {
-    background-color: #2f424a;
+    background-color: #091d25;
   }
 }
 
@@ -213,9 +226,6 @@ a:hover,
 }
 
 .dictionary {
-  /* display: flex; */
-  opacity: 0.1 !important;
-  /* transition: 0.5s; */
   transition: all 0.3s ease;
 }
 
@@ -311,7 +321,7 @@ a:hover,
 
 .homePage {
   display: flex;
-  height: 100vh;
+  height: 80vh;
 }
 
 @media (max-width:1200px) {
@@ -357,7 +367,6 @@ a:hover,
 .aboutMe {
   font-size: 1.25em;
   color: white;
-  /* padding: 2em; */
   line-height: 2.25em;
 }
 
@@ -601,6 +610,7 @@ button:enabled:hover {
 
 .ContentPage {
   display: flex;
+  margin-bottom: 20em;
 }
 
 @media (max-width:1200px) {
