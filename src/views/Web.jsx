@@ -8,7 +8,7 @@ const Web = () => {
     return (
       <Card key={index}>
       <Card.Body>
-        <Card.Img/>
+        <Card.Img src={example.image} alt={example.title}/>
       </Card.Body>
         <Card.Body>
           <Card.Title>
