@@ -20,7 +20,7 @@ const NavbarTest = () => {
 		<Navbar collapseOnSelect expand="lg" bg="dark" variant={open?"dark":"light"}>
 		<div className='menuOverlay' style={{display : open ? 'none' : 'inherit'}}/>
 			<Container>
-				<Navbar.Brand href="/portfolio">Michael Powell</Navbar.Brand>
+				<Navbar.Brand href="/portfolio" style={open ? {color: "#353535"} : {color: "white"}}>Michael Powell</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" style={{backgroundColor: (open ? "black" : "rgba(255,255,255,.5")}} onClick={handleClick} />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					{/* <Nav className="me-auto">

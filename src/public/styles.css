@@ -10,7 +10,7 @@ body {
   padding: 0 0px;
   width: 100%;
   font-family: 'Spartan', sans-serif !important;
-  color: white;
+  color: #353535;
   overflow: scroll;
 }
 
@@ -34,19 +34,19 @@ body.navbar-open {
 
 @keyframes Gradient {
   0% {
-    background-color: #091d25;
+    background-color: #c9c9c9;
   }
 
   25% {
-    background-color: #251a0a;
+    background-color: #c0c0c0;
   }
 
   50% {
-    background-color: #112709;
+    background-color: #d4d4d4;
   }
 
   100% {
-    background-color: #091d25;
+    background-color: #c9c9c9;
   }
 }
 
@@ -215,6 +215,8 @@ a:hover,
   font-style: italic;
   font-weight: 100;
   font-size: 0.75em;
+  color:#444444a8;
+  text-shadow: .25px .25px white;
 }
 
 .PageContent:hover {
@@ -265,9 +267,9 @@ a:hover,
 }
 
 .contentTitle {
-  color: white;
+  color: #353535;
   margin: 20px 0px 5px;
-  text-shadow: 0.5px 0.5px black;
+  text-shadow: 0.5px 0.5px rgb(73, 71, 71);
 }
 
 .textDescription {
@@ -303,18 +305,23 @@ a:hover,
   z-index: 1 !important;
 }
 
-.slick-prev::before {
+.slick-prev:before {
   font-size: 30px !important;
+  color: #353535;
+  opacity: 1;
 }
 
 .slick-next {
   z-index: 1 !important;
   right: 10px !important;
   top: -25px !important;
+  color: #353535
 }
 
-.slick-next::before {
+.slick-next:before {
   font-size: 30px !important;
+  color: #353535;
+  opacity: 1;
 }
 
 /* Home */
@@ -522,7 +529,7 @@ button:enabled:hover {
 }
 
 .contactTitle {
-  color: white;
+  color: #333333;
   text-align: center;
   padding: 1.5em;
 }
@@ -771,7 +778,7 @@ img.navbarLogo {
 }
 
 .CV {
-  color: white;
+  color: #353535;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 0px;

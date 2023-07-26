@@ -28,13 +28,13 @@ function Home() {
         style={{ flexDirection: "column", justifyContent: "center" }}
       >
         <div style={{ flex: 0.35, lineHeight: 3 }}>
-          <h1 style={{ color: "white", fontSize: "3em" }}>
+          <h1 style={{ color: "#353535", fontSize: "3em" }}>
             {copyConsts.welcomeTitle}
           </h1>
           {mobile ? (
             <></>
           ) : (
-            <p style={{ color: "white", fontSize: "2em" }}>
+            <p style={{ color: "#353535", fontSize: "2em" }}>
               {copyConsts.welcomeMessage}
             </p>
           )}
