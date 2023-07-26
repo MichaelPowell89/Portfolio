@@ -612,7 +612,7 @@ button:enabled:hover {
     margin: 10px 0 !important;
     max-height: inherit;
     margin-top: 20px !important;
-    overflow: visible !important;
+    /* overflow: visible !important; */
   }
 
   .contentTitle {
@@ -622,7 +622,7 @@ button:enabled:hover {
 
 .scrollContent {
   margin: 20px;
-  overflow: scroll;
+  overflow-x: scroll;
   width: 100%;
   /* -ms-overflow-style: none;  /* IE and Edge */
   /* scrollbar-width: none;  Firefox */
