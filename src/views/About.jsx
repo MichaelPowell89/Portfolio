@@ -14,6 +14,9 @@ import css from "../public/images/Experience/css.png";
 import js from "../public/images/Experience/js.png";
 import react from "../public/images/Experience/React.png";
 import cypress from "../public/images/Experience/cypress.png";
+import appium from "../public/images/Experience/appium.png";
+import java from "../public/images/Experience/java.png";
+import charles from "../public/images/Experience/charles.png";
 
 import copyConsts from "../copyConsts.json";
 
@@ -157,7 +160,7 @@ function About() {
               </Row>
             </div>
           </col-4>
-          {/* <col-4>
+          <col-4>
             <div className="skillColumn">
               <Row>
                 <OverlayTrigger
@@ -173,7 +176,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">Appium</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={css} alt="CSS" />
+                    <img className="experienceIcon" src={appium} alt="CSS" />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -182,7 +185,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">Java</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={js} alt="Javascript" />
+                    <img className="experienceIcon" src={java} alt="Javascript" />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -191,12 +194,12 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">Charles</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={react} alt="React" />
+                    <img className="experienceIcon" src={charles} alt="React" />
                   </p>
                 </OverlayTrigger>
               </Row>
             </div>
-          </col-4> */}
+          </col-4>
         </div>
       </div>
     </Container>
