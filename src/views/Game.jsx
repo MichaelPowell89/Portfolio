@@ -13,7 +13,7 @@ import SimpleReactLightbox from "simple-react-lightbox";
 const Game = (props) => {
   const [selectedTitle, newTitle] = useState(5);
 
-  const mobile = window.innerWidth < 768;
+  const mobile = window.innerWidth < 992;
 
   function handleChange(value) {
     return function() {

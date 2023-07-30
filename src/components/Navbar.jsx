@@ -19,18 +19,16 @@ const NavbarTest = () => {
 	return (
 		<Navbar collapseOnSelect expand="lg" bg="dark" variant={open?"dark":"light"}>
 		<div className='menuOverlay' style={{display : open ? 'none' : 'inherit'}}/>
-			<Container>
+			<Container style={{minHeight: "inherit"}}>
 				<Navbar.Brand href="/portfolio" style={open ? {color: "#353535"} : {color: "white"}}>Michael Powell</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" style={{backgroundColor: (open ? "black" : "rgba(255,255,255,.5")}} onClick={handleClick} />
 				<Navbar.Collapse id="responsive-navbar-nav">
-					{/* <Nav className="me-auto">
-					</Nav> */}
 					<Nav>
 						<Link to="/portfolio/games"><img className="navbarLogo" src={gameDesign} alt="" /></Link>
 						<Link to="/portfolio/web"><img className="navbarLogo" src={webDesign} alt=""/></Link>
 						<Link to="/portfolio/about"><img className="navbarLogo" src={about} alt=""/></Link>
 						<Link to="/portfolio/contact"><img className="navbarLogo" src={contact} alt=""/></Link>
-						<Nav.Link href={CV} download><h1 className="CV navbarLogo">CV</h1></Nav.Link>
+						<Nav.Link href={CV} download><h1 className="CV navbarLogo" style={{color: (open ? "#353535" : "white")}}>CV</h1></Nav.Link>
 						<a href="https://www.linkedin.com/in/michael-powell-38870333"><img className="instagramLogo navbarLogo" src={linkedIn} alt=""/></a>
 					</Nav>
 				</Navbar.Collapse>

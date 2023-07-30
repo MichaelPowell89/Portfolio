@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useParams} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Home from './views/Home.jsx';
 import Game from './views/Game.jsx';

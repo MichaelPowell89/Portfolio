@@ -34,19 +34,19 @@ body.navbar-open {
 
 @keyframes Gradient {
   0% {
-    background-color: #c9c9c9;
+    background-color: #f7ede2;
   }
 
   25% {
-    background-color: #c0c0c0;
+    background-color: #f0efeb;
   }
 
   50% {
-    background-color: #d4d4d4;
+    background-color: #fdfffc;
   }
 
   100% {
-    background-color: #c9c9c9;
+    background-color: #f7ede2;
   }
 }
 
@@ -134,7 +134,7 @@ ul.slider.animated {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .menuOverlay {
@@ -656,7 +656,7 @@ button:enabled:hover {
     min-width: 100% !important;
     position: relative !important;
     margin-top: 50px;
-    z-index: -1;
+    /* z-index: -1; */
   }
 
   .card-link {
@@ -730,13 +730,13 @@ button:enabled:hover {
 }
 
 .navbar-brand {
-  font-size: 2em !important;
+  font-size: 2.5em !important;
   padding-left: 12px;
 }
 
 @media (max-width: 992px) {
   .navbar-brand {
-    font-size: 1.25em !important;
+    font-size: 1.5em !important;
   }
 
   .container {
@@ -766,7 +766,7 @@ button:enabled:hover {
 }
 
 img.navbarLogo {
-  max-width: 40px;
+  max-width: 60px;
 }
 
 .CV {
@@ -841,4 +841,62 @@ img.navbarLogo {
     flex-direction: column;  
   }
 }
+
+.ball-3d {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  cursor: pointer;
+  /* Apply 3D transformations for the sphere effect */
+  transform-style: preserve-3d;
+  animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -200px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+canvas {
+  background-color: transparent;
+}
+
+.homeContent {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: space-between;
+  user-select: none;
+}
+
+@media (max-width: 1400px) {
+  .homeContent {
+    height: 30%;
+    top: 40%;
+  }
+}
+
+.canvas-container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+
+
 
