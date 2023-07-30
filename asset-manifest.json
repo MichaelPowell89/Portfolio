@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9f560feb.css",
-    "main.js": "/portfolio/static/js/main.f4166c74.js",
+    "main.js": "/portfolio/static/js/main.4d478076.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Maya.png": "/portfolio/static/media/Maya.d1380b85241712167eb8.png",
     "static/media/React.png": "/portfolio/static/media/React.fb59dfc6bb1bac6b0ad0.png",
@@ -12,6 +12,7 @@
     "static/media/UnrealEngine.png": "/portfolio/static/media/UnrealEngine.87b9a7c3736f1c1786cb.png",
     "static/media/Xbox.png": "/portfolio/static/media/Xbox.83669916a6a102a5a003.png",
     "static/media/c++.png": "/portfolio/static/media/c++.ed66806a8a1753bfbb51.png",
+    "static/media/charles.png": "/portfolio/static/media/charles.cf4e8c1dd3534dc45225.png",
     "static/media/Michael_Powell_CV_GameDesign.pdf": "/portfolio/static/media/Michael_Powell_CV_GameDesign.7754e67d3c79ee436d1d.pdf",
     "static/media/XD.png": "/portfolio/static/media/XD.71c89cab78265e989ebe.png",
     "static/media/websiteWhite.png": "/portfolio/static/media/websiteWhite.c1421068b5f36b67459e.png",
@@ -19,17 +20,19 @@
     "static/media/controller.png": "/portfolio/static/media/controller.75fa43d67744ac3c76c5.png",
     "static/media/Photoshop.png": "/portfolio/static/media/Photoshop.265e0948733f7d265e1a.png",
     "static/media/man.png": "/portfolio/static/media/man.28ec5b21f8dfee4198ff.png",
+    "static/media/appium.png": "/portfolio/static/media/appium.93d2fd217b5bf06ca4cd.png",
     "static/media/appleWhite.png": "/portfolio/static/media/appleWhite.4a9fb2ef67594a58df59.png",
     "static/media/website.png": "/portfolio/static/media/website.8363a5d44fe6b8180fa0.png",
     "static/media/cypress.png": "/portfolio/static/media/cypress.bf3e60a729439a08483f.png",
     "static/media/unity.png": "/portfolio/static/media/unity.bb0abe030000418f4aea.png",
+    "static/media/java.png": "/portfolio/static/media/java.8708d5a67b04cd3618b3.png",
     "index.html": "/portfolio/index.html",
     "main.9f560feb.css.map": "/portfolio/static/css/main.9f560feb.css.map",
-    "main.f4166c74.js.map": "/portfolio/static/js/main.f4166c74.js.map",
+    "main.4d478076.js.map": "/portfolio/static/js/main.4d478076.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f560feb.css",
-    "static/js/main.f4166c74.js"
+    "static/js/main.4d478076.js"
   ]
 }
