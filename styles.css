@@ -10,8 +10,22 @@ body {
   padding: 0 0px;
   width: 100%;
   font-family: 'Spartan', sans-serif !important;
-  color: white;
-  overflow: hidden;
+  color: #353535;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background:#555
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #bdbaba;
+  border-radius: 2em;
 }
 
 body.navbar-open {
@@ -20,19 +34,19 @@ body.navbar-open {
 
 @keyframes Gradient {
   0% {
-    background-color: #2f424a;
+    background-color: #f7ede2;
   }
 
   25% {
-    background-color: #5c3a3a;
+    background-color: #f0efeb;
   }
 
   50% {
-    background-color: #46623b;
+    background-color: #fdfffc;
   }
 
   100% {
-    background-color: #2f424a;
+    background-color: #f7ede2;
   }
 }
 
@@ -120,7 +134,7 @@ ul.slider.animated {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .menuOverlay {
@@ -201,6 +215,8 @@ a:hover,
   font-style: italic;
   font-weight: 100;
   font-size: 0.75em;
+  color:#444444a8;
+  text-shadow: .25px .25px white;
 }
 
 .PageContent:hover {
@@ -213,14 +229,7 @@ a:hover,
 }
 
 .dictionary {
-  /* display: flex; */
-  opacity: 0.1 !important;
-  /* transition: 0.5s; */
   transition: all 0.3s ease;
-}
-
-.dictionary:hover {
-  opacity: 1 !important;
 }
 
 .dictionary>.term {
@@ -232,10 +241,6 @@ a:hover,
 @media (max-width: 825px) {
   .dictionary>.term {
     margin-bottom: 15%;
-  }
-
-  .dictionary {
-    opacity: 1 !important;
   }
 
   .term {
@@ -254,9 +259,9 @@ a:hover,
 }
 
 .contentTitle {
-  color: white;
+  color: #353535;
   margin: 20px 0px 5px;
-  text-shadow: 0.5px 0.5px black;
+  text-shadow: 0.5px 0.5px rgb(73, 71, 71);
 }
 
 .textDescription {
@@ -292,18 +297,23 @@ a:hover,
   z-index: 1 !important;
 }
 
-.slick-prev::before {
+.slick-prev:before {
   font-size: 30px !important;
+  color: #353535;
+  opacity: 1;
 }
 
 .slick-next {
   z-index: 1 !important;
   right: 10px !important;
   top: -25px !important;
+  color: #353535
 }
 
-.slick-next::before {
+.slick-next:before {
   font-size: 30px !important;
+  color: #353535;
+  opacity: 1;
 }
 
 /* Home */
@@ -311,7 +321,7 @@ a:hover,
 
 .homePage {
   display: flex;
-  height: 100vh;
+  height: 80vh;
 }
 
 @media (max-width:1200px) {
@@ -322,7 +332,7 @@ a:hover,
   }
 
   .homeContainer {
-    margin: 100px !important;
+    margin: 25px !important;
     width: fit-content;
     margin: auto;
   }
@@ -334,15 +344,6 @@ a:hover,
   border-radius: 25px;
   height: fit-content;
   margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: space-around;
-  flex-direction: row;
-}
-
-.homeImage {
-  height: 200px;
 }
 
 /* AboutPage */
@@ -355,9 +356,7 @@ a:hover,
 }
 
 .aboutMe {
-  font-size: 1.25em;
   color: white;
-  /* padding: 2em; */
   line-height: 2.25em;
 }
 
@@ -401,7 +400,6 @@ a:hover,
 
 .imageContainer {
   max-width: 50%;
-  /* margin: 50px 0; */
 }
 
 .profileImage {
@@ -523,7 +521,7 @@ button:enabled:hover {
 }
 
 .contactTitle {
-  color: white;
+  color: #333333;
   text-align: center;
   padding: 1.5em;
 }
@@ -601,6 +599,7 @@ button:enabled:hover {
 
 .ContentPage {
   display: flex;
+  margin-bottom: 20em;
 }
 
 @media (max-width:1200px) {
@@ -612,7 +611,7 @@ button:enabled:hover {
     margin: 10px 0 !important;
     max-height: inherit;
     margin-top: 20px !important;
-    overflow: visible !important;
+    /* overflow: visible !important; */
   }
 
   .contentTitle {
@@ -622,7 +621,7 @@ button:enabled:hover {
 
 .scrollContent {
   margin: 20px;
-  overflow: scroll;
+  overflow-x: scroll;
   width: 100%;
   /* -ms-overflow-style: none;  /* IE and Edge */
   /* scrollbar-width: none;  Firefox */
@@ -657,19 +656,11 @@ button:enabled:hover {
     min-width: 100% !important;
     position: relative !important;
     margin-top: 50px;
-    z-index: -1;
+    /* z-index: -1; */
   }
 
   .card-link {
     padding: 0 !important;
-  }
-
-  .card-title {
-    font-size: 1.25em !important;
-  }
-
-  .card-text {
-    font-size: 1.25em !important;
   }
 }
 
@@ -678,16 +669,8 @@ button:enabled:hover {
   padding: 0 1em;
 }
 
-.card-title {
-  font-size: 2em !important;
-}
-
 .card-subtitle {
   font-size: 2em !important;
-}
-
-.card-text {
-  font-size: 1.5em;
 }
 
 .gameCard {
@@ -787,7 +770,7 @@ img.navbarLogo {
 }
 
 .CV {
-  color: white;
+  color: #353535;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 0px;
@@ -853,4 +836,67 @@ img.navbarLogo {
   .webPage {
     flex-direction: column;
   }
+
+  .row {
+    flex-direction: column;  
+  }
 }
+
+.ball-3d {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  cursor: pointer;
+  /* Apply 3D transformations for the sphere effect */
+  transform-style: preserve-3d;
+  animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -200px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+canvas {
+  background-color: transparent;
+}
+
+.homeContent {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: space-between;
+  user-select: none;
+}
+
+@media (max-width: 1400px) {
+  .homeContent {
+    height: 30%;
+    top: 30%;
+  }
+}
+
+.canvas-container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+
+
+
