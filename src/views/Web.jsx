@@ -3,7 +3,7 @@ import workExamples from "../workExamples";
 import { Card, Container, Row } from "react-bootstrap";
 
 const Web = () => {
-  const mobile = window.innerWidth < 768;
+  const mobile = window.innerWidth < 992;
   
   const generateCard = (index) => {
     const example = workExamples[index];
@@ -15,10 +15,11 @@ const Web = () => {
               src={example.image}
               alt={example.title}
               style={{ borderRadius: "2em 2em 0 0" }}
+              href={example.link}
             />
           </Card.Body>
           <Card.Body>
-            <Card.Title>
+            <Card.Title href={example.link}>
               {example.title} - {example.ReleaseYear}
             </Card.Title>
             <Card.Subtitle className="mb-2 text-muted">

@@ -9,6 +9,7 @@ import SlimeTimeCarousel from "../components/Carousel/SlimeTimeCarousel";
 import workExamples from "../workExamples";
 import { Card, Container } from "react-bootstrap";
 import SimpleReactLightbox from "simple-react-lightbox";
+import CardComponent from "../components/CardComponent";
 
 const Game = (props) => {
   const [selectedTitle, newTitle] = useState(5);
@@ -94,34 +95,19 @@ const toggleAccordion = (titleIndex) => {
 
   return (
     <SimpleReactLightbox>
-      <div className="overlay" />
-      <Container>
-        <div className="ContentPage">
-        <Card style={{ width: "18rem" }}>
-             <Card.Body className="gameCard">
-               <Card.Title>
-                 {workExamples[selectedTitle].title} -{" "}
-                 {workExamples[selectedTitle].ReleaseYear}
-               </Card.Title>
-               <Card.Subtitle className="mb-2 text-muted">
-                 {workExamples[selectedTitle].position}
-               </Card.Subtitle>
-               <Card.Text>{workExamples[selectedTitle].summary}</Card.Text>
-               <Card.Text>{workExamples[selectedTitle].description}</Card.Text>
-               <Card.Link href="#">
-                 {workExamples[selectedTitle].platform1}
-               </Card.Link>
-               <Card.Link href="#">
-                 {workExamples[selectedTitle].platform2}
-               </Card.Link>
-               <Card.Link href="#">
-                 {workExamples[selectedTitle].platform3}
-               </Card.Link>
-               <Card.Link href="#">
-                 {workExamples[selectedTitle].platform4}
-               </Card.Link>
-             </Card.Body>
-        </Card>
+      {/* <div className="overlay" /> */}
+      <Container className="ContentPage" style={{alignItems: "flex-start"}}>
+        <CardComponent 
+          Title={workExamples[selectedTitle].title}
+          Subtitle={workExamples[selectedTitle].ReleaseYear}
+          Position={workExamples[selectedTitle].position}
+          Summary={workExamples[selectedTitle].summary}
+          Description={workExamples[selectedTitle].description}
+          Platform1={workExamples[selectedTitle].platform1}
+          Platform2={workExamples[selectedTitle].platform2}
+          Platform3={workExamples[selectedTitle].platform3}
+          Platform4={workExamples[selectedTitle].platform4}
+        />
           <div className="scrollContent">
             {renderAccordionSection(5, AFLE3Carousel)}
             {renderAccordionSection(0, RugbyCarousel)}
@@ -131,7 +117,6 @@ const toggleAccordion = (titleIndex) => {
             {renderAccordionSection(4, OGICarousel)}
             {renderAccordionSection(2, TyCarousel)}
           </div>
-        </div>
       </Container>
     </SimpleReactLightbox>
   );

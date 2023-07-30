@@ -47,7 +47,10 @@ function ContactForm() {
   };
 
   return (
-    <>
+    <Container className="ContentPage" style={{
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center"}}>
       {contactForm ? (
         <Container>
             <div className="ContactContainer">
@@ -207,7 +210,7 @@ function ContactForm() {
         </Container>
         </>
       )}
-    </>
+    </Container>
   );
 }
 
