@@ -8,15 +8,17 @@ const Web = () => {
   const generateCard = (index) => {
     const example = workExamples[index];
     return (
-      <div style={{
-        // flex: 1,
-        display: "flex",
+      <div style={mobile ? 
+              {display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        flex: 1,
-        padding: "2em"
+        flex: 1} : {
+        display: "flex",
+        justifyContent: "center",
+        padding: "2em",
+        maxWidth: "50%"
         }}>
-        <Card key={index} className={mobile ? "" : "h-100"} style={{maxWidth: "40%"}}>
+        <Card key={index} className={mobile ? "" : "h-100"} style={{maxWidth: "20%"}}>
           <Card.Body href={example.link}>
             <Card.Img
               src={example.image}

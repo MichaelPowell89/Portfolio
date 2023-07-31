@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Home from "./Home.jsx";
 
 const SinglePage = () => {
+  const mobile = window.innerWidth < 992;
   const [lazyComponents, setLazyComponents] = useState({});
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
@@ -103,7 +104,7 @@ const SinglePage = () => {
 
   return (
     <>
-      <section id="home" style={{ height: "100vh" }}>
+      <section id="home" style={{height: "100vh"}}>
         <Home />
       </section>
       <section id="game" className={`backgroundVariant slide-in`}>

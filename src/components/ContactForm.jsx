@@ -50,7 +50,8 @@ function ContactForm() {
     <Container className="ContentPage" style={{
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center"}}>
+      justifyContent: "center",
+      width: "90vw"}}>
       {contactForm ? (
         <Container>
             <div className="ContactContainer">
