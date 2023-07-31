@@ -9,6 +9,7 @@ import linkedIn from "../public/images/linkedin.png";
 import CV from "../public/Michael_Powell_CV_GameDesign.pdf";
 
 const NavbarTest = () => {
+  const mobile = window.innerWidth < 992;
   const [open, setOpen] = useState(true);
 
   const handleClick = () => {
@@ -17,7 +18,7 @@ const NavbarTest = () => {
   };
 
   const handleRedirect = () => {
-  if (open) setOpen(!open);
+  if (mobile && open) setOpen(!open);
 	const currentURL = window.location.href;
 	
 	if (currentURL.includes("404"))
