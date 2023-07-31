@@ -15,6 +15,10 @@ body {
   overflow-y: auto;
 }
 
+h1 img {
+  user-select: none;
+}
+
 .backgroundVariant {
   animation: Variant 15s ease infinite;
 }
@@ -143,14 +147,16 @@ ul.slider.animated {
     padding: 0;
     min-width: 25em !important;
   }
-
-  .ContentPage {
-    /* padding-top: 2em; */
-  }
 }
 
 .navbar-collapse {
   justify-content: flex-end;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    opacity: 30%;
+  }
 }
 
 .navbar-toggler {
@@ -725,19 +731,31 @@ button:enabled:hover {
 /* New Nav Bar*/
 /* ////////////////////////////////// */
 
-.navbar {
+.navbarDesktop {
+  width: 10%;
+  min-height: 90vh;
+  z-index: 1;
+  flex-direction: column;
+  align-items: flex-start !important;
+  position: fixed !important;
+  padding: 5% !important;
+  top: 0;
+}
+
+.navbarMobile {
   min-height: 90px;
   align-items: flex-end !important;
   z-index: 1;
-  position: sticky !important;
-  top: 0px
+  position: fixed !important;
+  top: 0px;
+  min-width: 100%;
 }
 
 @media (max-width:990px) {
-  .navbar {
+  /* .navbarMobile {
     position: fixed !important;
     min-width: 100%;
-  }
+  } */
 
   .navbar>.container {
     align-items: flex-start !important;
@@ -776,8 +794,21 @@ button:enabled:hover {
 }
 
 .navbar-brand {
-  font-size: 2.5em !important;
+  font-size: 3em !important;
   padding-left: 12px;
+}
+
+.navbar-divider {
+    width: 2%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.active {
+  transform: scale(1.5);
+  background-color: gold;
+  border-radius: 50%;
+  opacity: 100%;
 }
 
 @media (max-width: 992px) {
@@ -796,18 +827,13 @@ button:enabled:hover {
 
 .container {
   text-align: center;
-  width: 90vw !important;
+  width: 70vw !important;
 }
 
-.contactContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 1620px) {
+@media (max-width: 1620px) {
   .container {
     max-width: 2300px !important;
+    min-width: 90vw;
   }
 }
 
@@ -826,6 +852,7 @@ img.navbarLogo {
   margin-bottom: 0px;
   font-size: 2.25em;
   transition: all 0.3s ease-in-out;
+  opacity: 100%;
 }
 
 .summary {
