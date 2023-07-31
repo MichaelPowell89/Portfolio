@@ -2,21 +2,34 @@ import React from "react";
 import { Container, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
 import profile from "../public/images/LogoAsset.png";
 
-import unrealEngine from "../public/images/Experience/UnrealEngine.png";
-import cplusplus from "../public/images/Experience/c++.png";
-import unity from "../public/images/Experience/unity.png";
-import photoshop from "../public/images/Experience/Photoshop.png";
-import illustrator from "../public/images/Experience/Illustrator.png";
-import xd from "../public/images/Experience/XD.png";
-import maya from "../public/images/Experience/Maya.png";
-import html from "../public/images/Experience/html.png";
-import css from "../public/images/Experience/css.png";
-import js from "../public/images/Experience/js.png";
-import react from "../public/images/Experience/React.png";
-import cypress from "../public/images/Experience/cypress.png";
-import appium from "../public/images/Experience/appium.png";
-import java from "../public/images/Experience/java.png";
-import charles from "../public/images/Experience/charles.png";
+import unrealEngine from "../public/images/Experience/UnrealEngine.svg";
+import cplusplus from "../public/images/Experience/c.svg";
+import unity from "../public/images/Experience/unity.svg";
+import photoshop from "../public/images/Experience/Photoshop.svg";
+import illustrator from "../public/images/Experience/Illustrator.svg";
+import xd from "../public/images/Experience/XD.svg";
+import maya from "../public/images/Experience/Maya.svg";
+import html from "../public/images/Experience/html.svg";
+import css from "../public/images/Experience/css.svg";
+import js from "../public/images/Experience/js.svg";
+import react from "../public/images/Experience/React.svg";
+import cypress from "../public/images/Experience/cypress.svg";
+import java from "../public/images/Experience/java.svg";
+import charles from "../public/images/Experience/charles.svg";
+
+import AppiumSVG from "../public/images/Experience/SVG/AppiumSVG.jsx";
+import UnrealEngineSVG from "../public/images/Experience/SVG/UnrealEngineSVG.jsx";
+import CProgrammingSVG from "../public/images/Experience/SVG/CProgrammingSVG.jsx";
+import AdobeXDSVG from "../public/images/Experience/SVG/AdobeXDSVG.jsx";
+import CSSSVG from "../public/images/Experience/SVG/CSSSVG.jsx";
+import HTMLSVG from "../public/images/Experience/SVG/HTMLSVG.jsx";
+import PhotoshopSVG from "../public/images/Experience/SVG/PhotoshopSVG.jsx";
+import IllustratorSVG from "../public/images/Experience/SVG/IllustratorSVG.jsx";
+import JavaSVG from "../public/images/Experience/SVG/JavaSVG";
+import UnitySVG from "../public/images/Experience/SVG/UnitySVG";
+import BlenderSVG from "../public/images/Experience/SVG/BlenderSVG";
+import JavascriptSVG from "../public/images/Experience/SVG/JavascriptSVG";
+import ReactSVG from "../public/images/Experience/SVG/ReactSVG";
 
 import copyConsts from "../copyConsts.json";
 
@@ -40,11 +53,7 @@ function About() {
                   }
                 >
                   <p>
-                    <img
-                      className="experienceIcon unrealEngine"
-                      src={unrealEngine}
-                      alt="Unreal Engine"
-                    />
+                    <UnrealEngineSVG />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -53,7 +62,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">C++</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={cplusplus} alt="C++" />
+                    <CProgrammingSVG />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -62,7 +71,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">Unity</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={unity} alt="Unity" />
+                  <UnitySVG/>
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -77,11 +86,7 @@ function About() {
                   }
                 >
                   <p>
-                    <img
-                      className="experienceIcon"
-                      src={photoshop}
-                      alt="Adobe Photoshop"
-                    />
+                    <PhotoshopSVG />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -92,11 +97,7 @@ function About() {
                   }
                 >
                   <p>
-                    <img
-                      className="experienceIcon"
-                      src={illustrator}
-                      alt="Adobe Illustrator"
-                    />
+                    <IllustratorSVG />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -105,16 +106,16 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">Adobe XD</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={xd} alt="Adobe XD" />
+                    <AdobeXDSVG />
                   </p>
                 </OverlayTrigger>
               </Row>
               <Row>
                 <OverlayTrigger
-                  overlay={<Tooltip id="tooltip-disabled">Maya</Tooltip>}
+                  overlay={<Tooltip id="tooltip-disabled">Blender</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={maya} alt="Maya" />
+                  <BlenderSVG/>
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -127,7 +128,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">HTML</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={html} alt="HTML" />
+                    <HTMLSVG />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -136,7 +137,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">CSS</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={css} alt="CSS" />
+                    <CSSSVG />
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -145,7 +146,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">Javascript</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={js} alt="Javascript" />
+                    <JavascriptSVG/>
                   </p>
                 </OverlayTrigger>
               </Row>
@@ -154,47 +155,7 @@ function About() {
                   overlay={<Tooltip id="tooltip-disabled">React</Tooltip>}
                 >
                   <p>
-                    <img className="experienceIcon" src={react} alt="React" />
-                  </p>
-                </OverlayTrigger>
-              </Row>
-            </div>
-          </col-4>
-          <col-4>
-            <div className="skillColumn">
-              <Row>
-                <OverlayTrigger
-                  overlay={<Tooltip id="tooltip-disabled">Cypress</Tooltip>}
-                >
-                  <p>
-                    <img className="experienceIcon" src={cypress} alt="HTML" />
-                  </p>
-                </OverlayTrigger>
-              </Row>
-              <Row>
-                <OverlayTrigger
-                  overlay={<Tooltip id="tooltip-disabled">Appium</Tooltip>}
-                >
-                  <p>
-                    <img className="experienceIcon" src={appium} alt="CSS" />
-                  </p>
-                </OverlayTrigger>
-              </Row>
-              <Row>
-                <OverlayTrigger
-                  overlay={<Tooltip id="tooltip-disabled">Java</Tooltip>}
-                >
-                  <p>
-                    <img className="experienceIcon" src={java} alt="Javascript" />
-                  </p>
-                </OverlayTrigger>
-              </Row>
-              <Row>
-                <OverlayTrigger
-                  overlay={<Tooltip id="tooltip-disabled">Charles</Tooltip>}
-                >
-                  <p>
-                    <img className="experienceIcon" src={charles} alt="React" />
+                    <ReactSVG/>
                   </p>
                 </OverlayTrigger>
               </Row>

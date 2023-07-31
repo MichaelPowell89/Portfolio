@@ -8,7 +8,12 @@ const Web = () => {
   const generateCard = (index) => {
     const example = workExamples[index];
     return (
-      <div style={{flex: .5}}>
+      <div style={{
+        // flex: 1,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+        }}>
         <Card key={index} className={mobile ? "" : "h-100"} style={{maxWidth: "40%"}}>
           <Card.Body href={example.link}>
             <Card.Img
@@ -36,9 +41,9 @@ const Web = () => {
     <>
       <div className="overlay" />
       <Container className="ContentPage">
-        <Row style={{'--bs-gutter-y': '1.5em', justifyContent: "space-between"}}>
+        <div className="webComponent">
           {[7, 8, 9].map((index) => generateCard(index))}
-        </Row>
+        </div>
       </Container>
     </>
   );

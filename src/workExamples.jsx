@@ -1,6 +1,13 @@
 import React from 'react';
 import xbox from "./public/images/Platform/Xbox.png"
-import playstation from "./public/images/Platform/Playstation.png"
+import PlaystationSVG from './public/images/Experience/SVG/PlaystationSVG';
+import XboxSVG from './public/images/Experience/SVG/XboxSVG';
+import SteamSVG from './public/images/Experience/SVG/SteamSVG';
+import NintendoSVG from './public/images/Experience/SVG/NintendoSVG';
+import AppleSVG from './public/images/Experience/SVG/AppleSVG';
+import AndroidSVG from './public/images/Experience/SVG/AndroidSVG';
+import WindowsSVG from './public/images/Experience/SVG/WindowsSVG';
+// import playstation from "./public/images/Platform/Playstation.png"
 import steam from "./public/images/Platform/Steam.png"
 import nintendo from "./public/images/Platform/Nintendo.png"
 import android from "./public/images/Platform/Android.png"
@@ -22,13 +29,13 @@ const workExamples = [
         <li>Discussion, collaboration and mediation with stakeholders regarding feedback, development and implementation of new gameplay features</li>
       </ul>,
       // Xbox
-      platform1: <a href="https://www.xbox.com/en-au/games/store/rugby-challenge-4/9p3qwt95fmhq" className="platformLogo"><img width='50px' height='50px' src={xbox} alt=""/></a>,
+      platform1: <a href="https://www.xbox.com/en-au/games/store/rugby-challenge-4/9p3qwt95fmhq" className="platformLogo"><XboxSVG/></a>,
       //Playstation
-      platform2: <a href="https://store.playstation.com/en-au/product/EP4116-CUSA16106_00-RUCHALLENGE4SIEE/" className="platformLogo"><img width='60px' height='50px' src={playstation} alt=""/></a>,
+      platform2: <a href="https://store.playstation.com/en-au/product/EP4116-CUSA16106_00-RUCHALLENGE4SIEE/" className="platformLogo"><PlaystationSVG/></a>,
       //Steam
-      platform3: <a href="https://store.steampowered.com/app/543960/Rugby_Challenge_4/" className="platformLogo"><img width='50px' height='50px' src={steam} alt=""/></a>,
+      platform3: <a href="https://store.steampowered.com/app/543960/Rugby_Challenge_4/" className="platformLogo"><SteamSVG/></a>,
       //Switch
-      platform4: <a href="https://www.nintendo.com/store/products/rugby-challenge-4-switch/" className="platformLogo"><img width='50px' height='50px' src={nintendo} alt=""/> </a>
+      platform4: <a href="https://www.nintendo.com/store/products/rugby-challenge-4-switch/" className="platformLogo"><NintendoSVG/></a>
     },
     {
       id: 2,
@@ -43,13 +50,13 @@ const workExamples = [
         <li>Documentation and design of player attributes and statistics for depicting gameplay behaviour consistent with real world players</li>
         <li>Assisting with marketing and advertisements with capturing gameplay images and footage using Unreal Engine</li>
       </ul>,// Xbox
-      platform1: <a href="https://www.xbox.com/en-au/games/store/afl-evolution-2/9nsx507n0s3x" className="platformLogo"><img width='50px' height='50px' src={xbox} alt=""/></a>,
+      platform1: <a href="https://www.xbox.com/en-au/games/store/afl-evolution-2/9nsx507n0s3x" className="platformLogo"><XboxSVG/></a>,
       //Playstation
-      platform2: <a href="https://store.playstation.com/en-au/product/EP4116-CUSA14564_00-AFLEVOLUTION2000" className="platformLogo"><img width='60px' height='50px' src={playstation} alt=""/></a>,
+      platform2: <a href="https://store.playstation.com/en-au/product/EP4116-CUSA14564_00-AFLEVOLUTION2000" className="platformLogo"><PlaystationSVG/></a>,
       //Steam
-      platform3: <a href="https://www.xbox.com/en-au/games/store/rugby-challenge-4/9p3qwt95fmhq" className="platformLogo"><img width='50px' height='50px' src={steam} alt=""/></a>,
+      platform3: <a href="https://www.xbox.com/en-au/games/store/rugby-challenge-4/9p3qwt95fmhq" className="platformLogo"><SteamSVG/></a>,
       //Switch
-      platform4: <a href="https://ec.nintendo.com/AU/en/titles/70010000016662" className="platformLogo"><img width='50px' height='50px' src={nintendo} alt=""/></a> 
+      platform4: <a href="https://ec.nintendo.com/AU/en/titles/70010000016662" className="platformLogo"><NintendoSVG/></a> 
     },
     {
       id: 3,
@@ -63,11 +70,11 @@ const workExamples = [
         <li>Daily scrum meetings with stakeholders</li>
       </ul>,
       // Xbox
-      platform1: <a href="https://www.xbox.com/en-au/games/store/ty-the-tasmanian-tiger-2-bush-rescue-hd/9nm1h95grgk7" className="platformLogo"><img width='50px' height='50px' src={xbox} alt=""/></a>,
+      platform1: <a href="https://www.xbox.com/en-au/games/store/ty-the-tasmanian-tiger-2-bush-rescue-hd/9nm1h95grgk7" className="platformLogo"><XboxSVG/></a>,
       //Playstation
-      platform2: <a href="https://store.playstation.com/en-au/product/EP5633-CUSA26866_00-7582797769000003" className="platformLogo"><img width='60px' height='50px' src={playstation} alt=""/></a>,
+      platform2: <a href="https://store.playstation.com/en-au/product/EP5633-CUSA26866_00-7582797769000003" className="platformLogo"><PlaystationSVG/></a>,
       //Switch
-      platform4: <a href="https://www.nintendo.com.au/games/nintendo-switch/ty-the-tasmanian-tiger-2-bush-rescue-hd" className="platformLogo"><img width='50px' height='50px' src={nintendo} alt=""/></a>
+      platform4: <a href="https://www.nintendo.com.au/games/nintendo-switch/ty-the-tasmanian-tiger-2-bush-rescue-hd" className="platformLogo"><NintendoSVG/></a>
     },
     {
       id: 4,
@@ -81,8 +88,8 @@ const workExamples = [
         <li> Extensive playtesting through all stages of development, started in 2011 and returned to collaborate again in 2020</li>
         <li> Discussion and documentation for feedback regarding gameplay, player satisfaction and tone</li>
       </ul>,
-      platform1: <a href="https://play.google.com/store/apps/details?id=com.chillingo.catapultkingfree.android.row" className="platformLogo"><img width='45px' height='55px' src={android} alt=""/></a>,
-      platform2: <a href="https://apps.apple.com/us/app/id497936366" className="platformLogo"><img width='50px' height='50px' src={apple} alt=""/></a>,
+      platform1: <a href="https://play.google.com/store/apps/details?id=com.chillingo.catapultkingfree.android.row" className="platformLogo"><AndroidSVG/></a>,
+      platform2: <a href="https://apps.apple.com/us/app/id497936366" className="platformLogo"><AppleSVG/></a>,
     },
     {
       id: 5,
@@ -122,7 +129,7 @@ const workExamples = [
         <li>Collaboration, design and documentation</li>
         <li>UI, Level and puzzle design within Unity</li>
       </ul>,
-      platform1: <div className="platformLogo"><img width='50px' height='50px' src={windows} alt=""/></div>
+      platform1: <div className="platformLogo"><WindowsSVG/></div>
     },
     {
       id: 8,

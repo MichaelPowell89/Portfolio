@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 
 const CardComponent = (props) => {
   return (
@@ -14,10 +14,12 @@ const CardComponent = (props) => {
         </Card.Subtitle>
         <Card.Text>{props.Summary}</Card.Text>
         <Card.Text>{props.Description}</Card.Text>
-        <Card.Link href="#">{props.Platform1}</Card.Link>
-        <Card.Link href="#">{props.Platform2}</Card.Link>
-        <Card.Link href="#">{props.Platform3}</Card.Link>
-        <Card.Link href="#">{props.Platform4}</Card.Link>
+        <div className="platformRow">
+          {props.Platform1 && <Card.Link href="#">{props.Platform1}</Card.Link>}
+          {props.Platform2 && <Card.Link href="#">{props.Platform2}</Card.Link>}
+          {props.Platform3 && <Card.Link href="#">{props.Platform3}</Card.Link>}
+          {props.Platform4 && <Card.Link href="#">{props.Platform4}</Card.Link>}
+        </div>
       </Card.Body>
     </Card>
   );

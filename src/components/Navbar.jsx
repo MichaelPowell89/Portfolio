@@ -17,6 +17,7 @@ const NavbarTest = () => {
   };
 
   const handleRedirect = () => {
+  if (open) setOpen(!open);
 	const currentURL = window.location.href;
 	
 	if (currentURL.includes("404"))

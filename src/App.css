@@ -256,9 +256,10 @@ a:hover,
   opacity: 1;
 }
 
-.platformLogo {
-  padding: 10px 20px 5px 0px;
-  display: flex;
+.platformRow {
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start; */
 }
 
 .dictionary {
@@ -697,6 +698,13 @@ button:enabled:hover {
 
   .card-link {
     padding: 0 !important;
+    transform: scale(.75);
+  }
+
+  .platformRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -733,7 +741,7 @@ button:enabled:hover {
 
   .navbar>.container {
     align-items: flex-start !important;
-    min-height: 100vh;
+    min-height: 100vh !important;
     margin-top: 10px;
   }
 
@@ -743,7 +751,7 @@ button:enabled:hover {
   }
 
   .navbarLogo {
-    margin: 1.3em;
+    /* margin: 1.3em; */
     min-width: 60px;
   }
 }
@@ -779,6 +787,10 @@ button:enabled:hover {
 
   .container {
     padding-bottom: 3em;
+  }
+
+  .navbar-nav {
+      min-height: 80vh;
   }
 }
 
@@ -925,6 +937,16 @@ canvas {
     height: 30%;
     top: 40%;
   }
+
+  .SVGComponent {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+.SVGComponent {
+  width: 100px;
+  height: 100px;
 }
 
 .canvas-container {
@@ -934,6 +956,45 @@ canvas {
   left: 0;
   height: 100vh;
 }
+
+/* styles.css */
+/* For sliding in from the right */
+.slide-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* For sliding in from the left */
+.slide-enter-left {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slide-enter-active-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+.webComponent {
+  --bs-gutter-y: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .webComponent {
+    flex-direction: column;
+  }
+}
+
 
 
 
