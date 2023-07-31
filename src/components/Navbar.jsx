@@ -188,16 +188,17 @@ const NavbarTest = () => {
                 <img className="navbarLogo" src={contact} alt="" />
               </Nav.Link>
               <div className="navbar-divider" />
-              <Nav.Link href={CV} download>
+              <Nav.Link href={CV} download style={{opacity: "100%"}}>
                 <h1
                   className="CV navbarLogo"
-                  style={{ color: open ? "#353535" : "white" }}
+                  style={{ color: open ? "#353535" : "white"}}
                 >
                   CV
                 </h1>
               </Nav.Link>
               <div className="navbar-divider" />
-              <a href="https://www.linkedin.com/in/michael-powell-38870333">
+              <a target="_blank" href="https://www.linkedin.com/in/michael-powell-38870333"
+              >
                 <img
                   className="instagramLogo navbarLogo"
                   src={linkedIn}
