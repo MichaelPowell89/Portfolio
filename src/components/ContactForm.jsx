@@ -3,7 +3,13 @@ import { Container, Row } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import copyConsts from "../copyConsts.json"
 
+import LocationSVG from "../public/images/Experience/SVG/LocationSVG";
+import PhoneSVG from "../public/images/Experience/SVG/PhoneSVG";
+import EmailSVG from "../public/images/Experience/SVG/EmailSVG";
+import LinkedInSVG from "../public/images/Experience/SVG/LinkedInSVG";
+
 function ContactForm() {
+  const mobile = window.innerWidth < 992;
   const form = useRef();
   const [contactForm, setContactForm] = useState(false);
 
@@ -47,15 +53,19 @@ function ContactForm() {
   };
 
   return (
-    <Container className="ContentPage" style={{
+    <Container className="ContentPage" 
+    style={{
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center",
-      width: "90vw"}}>
+      justifyContent: "center"}}>
       {contactForm ? (
         <Container>
             <div className="ContactContainer">
-                <h1 className="contactTitle">{copyConsts.emailResponse}</h1>
+                <h1 style={{
+                  color: "#fff",
+                  textAlign: "center",
+                  padding: "1.5em"
+                }}>{copyConsts.emailResponse}</h1>
             </div>
         </Container>
       ) : (
@@ -68,11 +78,7 @@ function ContactForm() {
                 <td>
                   <Row className="contactRow">
                     <p className="informationTitle">
-                      <img
-                        className="contactIcon"
-                        src="./images/contactLocation.png"
-                        alt=""
-                      />
+                    <LocationSVG/>
                       {copyConsts.addressTitle}
                     </p>
                   </Row>
@@ -85,11 +91,7 @@ function ContactForm() {
                 <td>
                   <Row className="contactRow">
                     <p className="informationTitle">
-                      <img
-                        className="contactIcon"
-                        src="./images/contactPhone.png"
-                        alt=""
-                      />
+                    <PhoneSVG/>
                       {copyConsts.phoneTitle}
                     </p>
                   </Row>
@@ -102,11 +104,7 @@ function ContactForm() {
                 <td>
                   <Row className="contactRow">
                     <p className="informationTitle">
-                      <img
-                        className="contactIcon"
-                        src="./images/contactEmail.png"
-                        alt=""
-                      />
+                    <EmailSVG/>
                       {copyConsts.myEmailTitle}
                     </p>
                   </Row>
@@ -123,13 +121,13 @@ function ContactForm() {
               <Row>
                 <td>
                   <Row className="contactRow">
-                    <p className="informationTitle">
-                      <img
-                        className="contactIcon"
-                        src="./images/linkedinOutline.png"
-                        style={{ paddingBottom: "15px" }}
-                        alt=""
-                      />
+                    <p className="informationTitle"
+                    style={{
+                      display: "flex",
+                      justifyContent: mobile ? "center" : "flex-start",
+                      alignItems: "baseline"
+                    }}>
+                    <LinkedInSVG/>
                       {copyConsts.LinkedInTitle}
                     </p>
                   </Row>

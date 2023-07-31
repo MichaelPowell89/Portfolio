@@ -528,7 +528,7 @@ button:disabled {
 }
 
 button:enabled {
-  opacity: 0.5 !important;
+  opacity: 1 !important;
   cursor: pointer !important;
   pointer-events: inherit !important;
 }
@@ -607,13 +607,14 @@ button:enabled:hover {
 
   .contactRow {
     text-align: center !important;
-    max-width: 90% !important;
+    /* max-width: 90% !important; */
     justify-content: center;
   }
 }
 
 .ContactForm {
   width: fit-content;
+  z-index: 1;
 }
 
 .contactIcon {
@@ -818,6 +819,7 @@ button:enabled:hover {
 
   .container {
     padding-bottom: 3em;
+    min-width: 90vw !important;
   }
 
   .navbar-nav {
@@ -827,13 +829,13 @@ button:enabled:hover {
 
 .container {
   text-align: center;
-  width: 70vw !important;
+  width: 70vw;
 }
 
 @media (max-width: 1620px) {
   .container {
     max-width: 2300px !important;
-    min-width: 90vw;
+    min-width: 90vw !important;
   }
 }
 
