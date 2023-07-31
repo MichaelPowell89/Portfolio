@@ -11,7 +11,12 @@ body {
   width: 100%;
   font-family: 'Spartan', sans-serif !important;
   color: #353535;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.backgroundVariant {
+  animation: Variant 15s ease infinite;
 }
 
 ::-webkit-scrollbar {
@@ -35,18 +40,40 @@ body.navbar-open {
 @keyframes Gradient {
   0% {
     background-color: #f7ede2;
+    color: #f7ede2;
   }
 
   25% {
-    background-color: #f0efeb;
+    background-color: #f0ebda;
+    color: #f0ebda;
   }
 
   50% {
-    background-color: #fdfffc;
+    background-color: #e5eee0;
+    color: #e5eee0;
   }
 
   100% {
     background-color: #f7ede2;
+    color: #f7ede2;
+  }
+}
+
+@keyframes Variant {
+  0% {
+    background-color: #2e2c2a;
+  }
+
+  25% {
+    background-color: #302c29;
+  }
+
+  50% {
+    background-color: #44413e;
+  }
+
+  100% {
+    background-color: #2e2c2a;
   }
 }
 
@@ -56,6 +83,12 @@ body.navbar-open {
   }
 
   ;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding: 10em;
+  }
 }
 
 /* //Lightbox controls */
@@ -112,7 +145,7 @@ ul.slider.animated {
   }
 
   .ContentPage {
-    padding-top: 2em;
+    /* padding-top: 2em; */
   }
 }
 
@@ -223,9 +256,10 @@ a:hover,
   opacity: 1;
 }
 
-.platformLogo {
-  padding: 10px 20px 5px 0px;
-  display: flex;
+.platformRow {
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start; */
 }
 
 .dictionary {
@@ -259,7 +293,7 @@ a:hover,
 }
 
 .contentTitle {
-  color: #353535;
+  color: Gradiant;
   margin: 20px 0px 5px;
   text-shadow: 0.5px 0.5px rgb(73, 71, 71);
 }
@@ -299,7 +333,7 @@ a:hover,
 
 .slick-prev:before {
   font-size: 30px !important;
-  color: #353535;
+  /* color: #ffffff; */
   opacity: 1;
 }
 
@@ -307,12 +341,12 @@ a:hover,
   z-index: 1 !important;
   right: 10px !important;
   top: -25px !important;
-  color: #353535
+  /* color: #353535 */
 }
 
 .slick-next:before {
   font-size: 30px !important;
-  color: #353535;
+  /* color: #353535; */
   opacity: 1;
 }
 
@@ -599,7 +633,10 @@ button:enabled:hover {
 
 .ContentPage {
   display: flex;
-  margin-bottom: 20em;
+  height: 100%;
+  align-items: center;
+  margin: auto;
+  /* margin-bottom: 20em; */
 }
 
 @media (max-width:1200px) {
@@ -661,6 +698,13 @@ button:enabled:hover {
 
   .card-link {
     padding: 0 !important;
+    transform: scale(.75);
+  }
+
+  .platformRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -685,6 +729,8 @@ button:enabled:hover {
   min-height: 90px;
   align-items: flex-end !important;
   z-index: 1;
+  position: sticky !important;
+  top: 0px
 }
 
 @media (max-width:990px) {
@@ -695,7 +741,7 @@ button:enabled:hover {
 
   .navbar>.container {
     align-items: flex-start !important;
-    min-height: 100vh;
+    min-height: 100vh !important;
     margin-top: 10px;
   }
 
@@ -705,7 +751,7 @@ button:enabled:hover {
   }
 
   .navbarLogo {
-    margin: 1.3em;
+    /* margin: 1.3em; */
     min-width: 60px;
   }
 }
@@ -730,17 +776,21 @@ button:enabled:hover {
 }
 
 .navbar-brand {
-  font-size: 2em !important;
+  font-size: 2.5em !important;
   padding-left: 12px;
 }
 
 @media (max-width: 992px) {
   .navbar-brand {
-    font-size: 1.25em !important;
+    font-size: 1.5em !important;
   }
 
   .container {
     padding-bottom: 3em;
+  }
+
+  .navbar-nav {
+      min-height: 80vh;
   }
 }
 
@@ -766,7 +816,7 @@ button:enabled:hover {
 }
 
 img.navbarLogo {
-  max-width: 40px;
+  max-width: 60px;
 }
 
 .CV {
@@ -885,8 +935,18 @@ canvas {
 @media (max-width: 1400px) {
   .homeContent {
     height: 30%;
-    top: 30%;
+    top: 40%;
   }
+
+  .SVGComponent {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+.SVGComponent {
+  width: 100px;
+  height: 100px;
 }
 
 .canvas-container {
@@ -896,6 +956,45 @@ canvas {
   left: 0;
   height: 100vh;
 }
+
+/* styles.css */
+/* For sliding in from the right */
+.slide-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* For sliding in from the left */
+.slide-enter-left {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slide-enter-active-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+.webComponent {
+  --bs-gutter-y: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .webComponent {
+    flex-direction: column;
+  }
+}
+
 
 
 
