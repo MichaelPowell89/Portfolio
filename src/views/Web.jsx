@@ -12,7 +12,9 @@ const Web = () => {
         // flex: 1,
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        flex: 1,
+        padding: "2em"
         }}>
         <Card key={index} className={mobile ? "" : "h-100"} style={{maxWidth: "40%"}}>
           <Card.Body href={example.link}>
