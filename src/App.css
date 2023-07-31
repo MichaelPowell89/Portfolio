@@ -670,7 +670,7 @@ button:enabled:hover {
   /* -ms-overflow-style: none;  /* IE and Edge */
   /* scrollbar-width: none;  Firefox */
   display: inline-block;
-  max-height: 90vh;
+  /* max-height: 90vh; */
 }
 
 .scrollContent::-webkit-scrollbar {
