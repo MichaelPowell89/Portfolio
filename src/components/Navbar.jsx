@@ -50,7 +50,7 @@ const NavbarTest = () => {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.9,
+        threshold: 0.5,
       }
     );
 
