@@ -6,7 +6,7 @@ const CardComponent = (props) => {
     <Card style={{ width: "18rem" }}>
       <Card.Body className="gameCard">
         <Card.Title>
-          {props.Title}
+          {props.Title}<> - </> 
           {props.Subtitle}
         </Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
