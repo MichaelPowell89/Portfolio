@@ -17,6 +17,7 @@ export default function SimpleSlider(props) {
       {AFLE2.map((props) => (
         <Content
           image={props.image}
+          blurImage={props.blurImage}
        />
        ))}
     </Slider>

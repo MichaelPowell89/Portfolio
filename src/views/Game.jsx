@@ -69,6 +69,7 @@ const toggleAccordion = (titleIndex) => {
                   <div className="dictionary">
                     <CarouselComponent
                       image={props.image}
+                      blurImage={props.blurImage}
                       mobileResolution={mobile}
                     />
                   </div>
@@ -84,6 +85,7 @@ const toggleAccordion = (titleIndex) => {
                 >
                   <CarouselComponent
                     image={props.image}
+                    blurImage={props.blurImage}
                     mobileResolution={mobile}
                   />
                 </div>

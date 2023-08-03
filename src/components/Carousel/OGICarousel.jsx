@@ -18,6 +18,7 @@ export default function SimpleSlider(props) {
         {OGI.map((props) => (
           <Content
             image={props.image}
+            blurImage={props.blurImage}
           />
         ))}
       </Slider>
