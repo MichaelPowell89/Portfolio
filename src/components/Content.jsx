@@ -21,8 +21,8 @@ function Content(props) {
 
   return (
     <SRLWrapper>
-      <div className="term blur-load">
-        <div className="blur-load" style={{ backgroundImage: props.blurImage }}>
+      <div className="term">
+      <div className="blur-load" style={{ backgroundImage: `url(${props.blurImage})` }}>
           <img className="imageThumbnail" src={props.image} alt="" />
         </div>
       </div>
