@@ -16,6 +16,8 @@ function Content(props) {
       img.addEventListener("load", loaded);
     }
   });
+  
+  console.log(props.blurImage);
 
   return (
     <SRLWrapper>

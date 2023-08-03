@@ -97,7 +97,6 @@ const toggleAccordion = (titleIndex) => {
 
   return (
     <SimpleReactLightbox>
-      {/* <div className="overlay" /> */}
       <Container className="ContentPage" style={{alignItems: "flex-start"}}>
         <CardComponent 
           Title={workExamples[selectedTitle].title}
