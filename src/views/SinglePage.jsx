@@ -18,6 +18,8 @@ const SinglePage = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
+    console.log(activeSection);
+
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -45,7 +47,6 @@ const SinglePage = () => {
       sections.forEach((section) => {
         observer.unobserve(section);
       });
-      console.log(activeSection);
     };
   }, []);
 
