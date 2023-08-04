@@ -26,6 +26,7 @@ const Web = (props) => {
               alt={example.title}
               style={{ borderRadius: "2em 2em 0 0" }}
               href={example.link}
+              loading="lazy"
             /> : <></>}
             </div>
           </Card.Body>
