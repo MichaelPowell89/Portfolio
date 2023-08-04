@@ -45,6 +45,7 @@ const SinglePage = () => {
       sections.forEach((section) => {
         observer.unobserve(section);
       });
+      console.log(activeSection);
     };
   }, []);
 
