@@ -1034,7 +1034,7 @@ img {
 }
 
 .blur-load.loaded::before {
-  content: none;
+  display: none;
 }
 
 @keyframes pulse {
