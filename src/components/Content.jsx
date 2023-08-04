@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function Content(props) {
-  const blurDivs = document.querySelectorAll(".blur-load");
-  blurDivs.forEach((div) => {
-    const img = div.querySelector("img");
+  useEffect(() => {
+    const blurDiv = document.querySelector(".blur-load");
+    const img = blurDiv.querySelector("img");
 
-    function loaded() {
-      div.classList.add("loaded");
+    function handleImageLoad() {
+      blurDiv.classList.add("loaded");
     }
 
     if (img.complete) {
-      loaded();
+      handleImageLoad();
     } else {
-      img.addEventListener("load", loaded);
+      img.addEventListener("load", handleImageLoad);
     }
-  });
-  
+
+    return () => {
+      // Clean up event listener when component unmounts
+      img.removeEventListener("load", handleImageLoad);
+    };
+  }, []);
+
   return (
     <SRLWrapper>
       <div className="term">
-      <div className="blur-load" style={{ backgroundImage: `url(${props.blurImage})` }}>
+        <div className="blur-load" style={{ backgroundImage: `url(${props.blurImage})` }}>
           <img className="imageThumbnail" src={props.image} alt="" />
         </div>
       </div>
