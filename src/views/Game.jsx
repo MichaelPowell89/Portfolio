@@ -144,15 +144,13 @@ const toggleAccordion = (titleIndex) => {
           Platform4={workExamples[selectedTitle].platform4}
         />
           <div className="scrollContent">
-          {activeSection == "game" ? <>
             {renderAccordionSection(5, AFLE3Carousel)}
             {renderAccordionSection(0, RugbyCarousel)}
             {renderAccordionSection(1, AFLE2Carousel)}
             {renderAccordionSection(3, CKCarousel)}
             {renderAccordionSection(6, SlimeTimeCarousel)}
             {renderAccordionSection(4, OGICarousel)}
-            {renderAccordionSection(2, TyCarousel)} </>: 
-          <></> }
+            {renderAccordionSection(2, TyCarousel)} 
           </div>
       </Container>
     </SimpleReactLightbox>

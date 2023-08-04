@@ -55,17 +55,13 @@ const Web = (props) => {
         }}>
         <Card key={index} className={mobile ? "" : "h-100"} style={{maxWidth: "20%"}}>
           <Card.Body href={example.link}>
-          <SRLWrapper>
-          {/* <div className="blur-load" style={{ backgroundImage: `url(${example.blurImage})`, borderRadius: "2em 2em 0 0" }}> */}
-          {props.activeSection == "web" ? <Card.Img
+          <div className="blur-load" style={{ backgroundImage: `url(${example.blurImage})`, borderRadius: "2em 2em 0 0" }}>
+          <Card.Img
               src={example.image}
               alt={example.title}
               style={{ borderRadius: "2em 2em 0 0" }}
-              href={example.link}
-              loading="lazy"
-            /> : <></>}
-            </SRLWrapper>
-            {/* </div> */}
+              href={example.link}/>
+              </div>
           </Card.Body>
           <Card.Body>
             <Card.Title href={example.link}>
