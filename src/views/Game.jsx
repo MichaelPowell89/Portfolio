@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RugbyCarousel from "../components/Carousel/RugbyCarousel";
 import AFLE2Carousel from "../components/Carousel/AFLE2Carousel";
 import AFLE3Carousel from "../components/Carousel/AFLE3Carousel";
@@ -144,7 +144,7 @@ const toggleAccordion = (titleIndex) => {
           Platform4={workExamples[selectedTitle].platform4}
         />
           <div className="scrollContent">
-          {activeSelection == "game" ? <>
+          {activeSection == "game" ? <>
             {renderAccordionSection(5, AFLE3Carousel)}
             {renderAccordionSection(0, RugbyCarousel)}
             {renderAccordionSection(1, AFLE2Carousel)}

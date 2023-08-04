@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import workExamples from "../workExamples";
 import { Card, Container, Row } from "react-bootstrap";
 import { SRLWrapper } from "simple-react-lightbox";
