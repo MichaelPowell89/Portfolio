@@ -80,7 +80,7 @@ const SinglePage = () => {
               }`}
               style={{ transition: "transform 500ms ease-in-out" }}
             >
-              <Game />
+              <Game activeSection={activeSection}/>
             </div>
           </section>
           <section id="web">
@@ -90,7 +90,7 @@ const SinglePage = () => {
               }`}
               style={{ transition: "transform 500ms ease-in-out" }}
             >
-              <Web />
+              <Web activeSection={activeSection}/>
             </div>
           </section>
           <section id="about" className={`backgroundVariant`}>

@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import Content from '../Content'
 import Rugby from "../../Rugby"
+import { ProSidebar } from "react-pro-sidebar";
 
 export default function SimpleSlider(props) {
   var settings = {
@@ -19,6 +20,7 @@ export default function SimpleSlider(props) {
         <Content
           image={props.image}
           blurImage={props.blurImage}
+          activeSelection={props.activeSelection}
        />
        ))}
     </Slider>

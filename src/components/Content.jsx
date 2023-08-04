@@ -6,12 +6,14 @@ function Content(props) {
     <SRLWrapper>
       <div className="term">
         <div className="blur-load">
+        {props.activeSection == "game" ?
           <img
             className="imageThumbnail"
             src={props.image}
             alt=""
-            loading="lazy" // Add the lazy loading attribute here
-          />
+            loading="lazy"
+          /> :
+        <></>}
         </div>
       </div>
     </SRLWrapper>
