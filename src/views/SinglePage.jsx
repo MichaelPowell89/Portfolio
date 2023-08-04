@@ -1,11 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Home from "./Home.jsx";
+import Game from "./Game.jsx";
+import Web from "./Web.jsx";
+import About from "./About.jsx";
+import Contact from "./Contact.jsx";
 
 const SinglePage = () => {
   const mobile = window.innerWidth < 992;
-  const [lazyComponents, setLazyComponents] = useState({});
   const [shouldAnimate, setShouldAnimate] = useState(false);
+
+  useEffect(() => {
+    // Introduce a delay before triggering initial animation
+    const timer = setTimeout(() => {
+      setShouldAnimate(true);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const [lazyComponents, setLazyComponents] = useState({
+    game: null,
+    web: null,
+    about: null,
+    contact: null,
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -17,36 +36,28 @@ const SinglePage = () => {
               case "home":
                 break;
               case "game":
-                import("./Game.jsx").then((module) => {
-                  setLazyComponents((prevComponents) => ({
-                    ...prevComponents,
-                    game: module.default,
-                  }));
-                });
+                setLazyComponents((prevComponents) => ({
+                  ...prevComponents,
+                  game: Game,
+                }));
                 break;
               case "web":
-                import("./Web.jsx").then((module) => {
-                  setLazyComponents((prevComponents) => ({
-                    ...prevComponents,
-                    web: module.default,
-                  }));
-                });
+                setLazyComponents((prevComponents) => ({
+                  ...prevComponents,
+                  web: Web,
+                }));
                 break;
               case "about":
-                import("./About.jsx").then((module) => {
-                  setLazyComponents((prevComponents) => ({
-                    ...prevComponents,
-                    about: module.default,
-                  }));
-                });
+                setLazyComponents((prevComponents) => ({
+                  ...prevComponents,
+                  about: About,
+                }));
                 break;
               case "contact":
-                import("./Contact.jsx").then((module) => {
-                  setLazyComponents((prevComponents) => ({
-                    ...prevComponents,
-                    contact: module.default,
-                  }));
-                });
+                setLazyComponents((prevComponents) => ({
+                  ...prevComponents,
+                  contact: Contact,
+                }));
                 break;
               default:
                 break;
@@ -57,7 +68,7 @@ const SinglePage = () => {
       {
         root: null,
         rootMargin: "0px",
-        threshold: .8,
+        threshold: 0.8,
       }
     );
 
@@ -73,21 +84,12 @@ const SinglePage = () => {
     };
   }, []);
 
-  useEffect(() => {
-    // Introduce a delay before triggering initial animation
-    const timer = setTimeout(() => {
-      setShouldAnimate(true);
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const renderLazyComponent = (Component, slideFromLeft) => {
     const enterClass = slideFromLeft ? "slide-enter-left" : "slide-enter";
     const enterActiveClass = slideFromLeft
       ? "slide-enter-active-left"
       : "slide-enter-active";
-  
+
     return (
       <CSSTransition
         in={!!Component}
@@ -100,11 +102,10 @@ const SinglePage = () => {
       </CSSTransition>
     );
   };
-   
 
   return (
     <>
-      <section id="home" style={{height: "100vh"}}>
+      <section id="home" style={{ height: "100vh" }}>
         <Home />
       </section>
       <section id="game" className={`backgroundVariant slide-in`}>
@@ -121,6 +122,6 @@ const SinglePage = () => {
       </section>
     </>
   );
-};  
+};
 
 export default SinglePage;
