@@ -1,27 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function Content(props) {
-  const blurDivs = document.querySelectorAll(".blur-load");
-  blurDivs.forEach((div) => {
-    const img = div.querySelector("img");
+  const blurDivRef = useRef(null);
 
-    function loaded() {
-      div.classList.add("loaded");
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target.querySelector("img");
+          img.src = props.image;
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    if (blurDivRef.current) {
+      observer.observe(blurDivRef.current);
     }
 
-    if (img.complete) {
-      loaded();
-    } else {
-      img.addEventListener("load", loaded);
-    }
-  });
-  
+    return () => {
+      if (blurDivRef.current) {
+        observer.unobserve(blurDivRef.current);
+      }
+    };
+  }, [props.image]);
+
   return (
     <SRLWrapper>
       <div className="term">
-      <div className="blur-load" style={{ backgroundImage: `url(${props.blurImage})` }}>
-          <img className="imageThumbnail" src={props.image} alt="" />
+        <div ref={blurDivRef} className="blur-load" style={{ backgroundImage: `url(${props.blurImage})` }}>
+          <img className="imageThumbnail" src="" alt="" />
         </div>
       </div>
     </SRLWrapper>
