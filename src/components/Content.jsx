@@ -17,8 +17,6 @@ function Content(props) {
     }
   });
   
-  console.log(props.blurImage);
-
   return (
     <SRLWrapper>
       <div className="term">

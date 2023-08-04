@@ -1,7 +1,7 @@
 const AFLE2 = [
   {
     image: './images/Games/AFLE2/CharlieCameron.png',
-    blurImage: './images/Games/AFLE2/CharlieCameron.png'
+    blurImage: './images/Games/AFLE2/CharlieCameron-small.png'
   },
   {
     image: './images/Games/AFLE2/HighresScreenshot00204.png',
