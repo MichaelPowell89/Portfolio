@@ -20,7 +20,7 @@ const Web = () => {
         }}>
         <Card key={index} className={mobile ? "" : "h-100"} style={{maxWidth: "20%"}}>
           <Card.Body href={example.link}>
-          <div className="blur-load" style={{ backgroundImage: `url(${example.blurImage})`}}>
+          <div className="blur-load" style={{ backgroundImage: `url(${example.blurImage})`, borderRadius: "2em 2em 0 0" }}>
             <Card.Img
               src={example.image}
               alt={example.title}
