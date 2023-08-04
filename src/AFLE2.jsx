@@ -34,10 +34,6 @@ const AFLE2 = [
   {
     image: './images/Games/AFLE2/HighresScreenshot00526.png',
     blurImage: './images/Games/AFLE2/HighresScreenshot00526-small.png'
-  },
-  {
-    image: './images/Games/AFLE2/HighresScreenshot00219.png',
-    blurImage: './images/Games/AFLE2/HighresScreenshot00219-small.png'
   }
 ]
   export default AFLE2;
