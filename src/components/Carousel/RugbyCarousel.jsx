@@ -20,7 +20,6 @@ export default function SimpleSlider(props) {
         <Content
           image={props.image}
           blurImage={props.blurImage}
-          activeSelection={props.activeSelection}
        />
        ))}
     </Slider>

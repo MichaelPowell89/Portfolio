@@ -1,6 +1,7 @@
 import React from "react";
 import workExamples from "../workExamples";
 import { Card, Container, Row } from "react-bootstrap";
+import { SRLWrapper } from "simple-react-lightbox";
 
 const Web = (props) => {
   const mobile = window.innerWidth < 992;
@@ -20,7 +21,8 @@ const Web = (props) => {
         }}>
         <Card key={index} className={mobile ? "" : "h-100"} style={{maxWidth: "20%"}}>
           <Card.Body href={example.link}>
-          <div className="blur-load" style={{ backgroundImage: `url(${example.blurImage})`, borderRadius: "2em 2em 0 0" }}>
+          <SRLWrapper>
+          {/* <div className="blur-load" style={{ backgroundImage: `url(${example.blurImage})`, borderRadius: "2em 2em 0 0" }}> */}
           {props.activeSection == "web" ? <Card.Img
               src={example.image}
               alt={example.title}
@@ -28,7 +30,8 @@ const Web = (props) => {
               href={example.link}
               loading="lazy"
             /> : <></>}
-            </div>
+            </SRLWrapper>
+            {/* </div> */}
           </Card.Body>
           <Card.Body>
             <Card.Title href={example.link}>
