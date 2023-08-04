@@ -5,6 +5,40 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 const Web = (props) => {
   const mobile = window.innerWidth < 992;
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    console.log(activeSection);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.getAttribute("id");
+            setTimeout(() => {
+              setActiveSection(sectionId);
+            }, 500); 
+          }
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2,
+      }
+    );
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
   
   const generateCard = (index) => {
     const example = workExamples[index];
