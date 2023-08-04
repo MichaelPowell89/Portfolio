@@ -1059,11 +1059,11 @@ img {
   background-repeat: no-repeat;
 }
 
-.blur-load.loaded>img {
+.blur-load.loaded > img {
   opacity: 1;
 }
 
-.blur-load>img {
+.blur-load > img {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
