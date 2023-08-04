@@ -87,6 +87,7 @@ const toggleAccordion = (titleIndex) => {
                     image={props.image}
                     blurImage={props.blurImage}
                     mobileResolution={mobile}
+                    activeSelection={props.activeSelection}
                   />
                 </div>
               </>
