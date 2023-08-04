@@ -2,6 +2,8 @@ import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function Content(props) {
+  const mobile = window.innerWidth < 992;
+  
   const blurDivs = document.querySelectorAll(".blur-load");
   blurDivs.forEach((div) => {
     const img = div.querySelector("img");
@@ -16,13 +18,20 @@ function Content(props) {
       img.addEventListener("load", loaded);
     }
   });
-  
+
   return (
     <SRLWrapper>
       <div className="term">
-      <div className="blur-load" style={{ backgroundImage: `url(${props.blurImage})` }}>
+        {mobile ? (
           <img className="imageThumbnail" src={props.image} alt="" />
-        </div>
+        ) : (
+          <div
+            className="blur-load"
+            style={{ backgroundImage: `url(${props.blurImage})` }}
+          >
+            <img className="imageThumbnail" src={props.image} alt="" />
+          </div>
+        )}
       </div>
     </SRLWrapper>
   );
