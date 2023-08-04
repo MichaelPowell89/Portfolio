@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 
 function Content(props) {
+  const [display, setDisplay] = useState(false);
+
+  useEffect(() => {
+    if (props.activeSection == "game") setDisplay(true)
+  }, []);
+
   return (
     <SRLWrapper>
       <div className="term">
         <div className="blur-load">
-        {props.activeSection == "game" ?
+        {display ?
           <img
             className="imageThumbnail"
             src={props.image}
