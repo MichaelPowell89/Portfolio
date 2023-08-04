@@ -1067,3 +1067,17 @@ img {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
+
+.offScreenRight {
+  position: relative;
+  transform: translateX(3000px);
+}
+
+.offScreenLeft {
+  position: relative;
+  transform: translateX(-3000px);
+}
+
+.inFocus {
+  transform: translateX(0);
+}

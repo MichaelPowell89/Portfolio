@@ -1034,7 +1034,7 @@ img {
 }
 
 .blur-load.loaded::before {
-  display: none;
+  content: none;
 }
 
 @keyframes pulse {
@@ -1066,4 +1066,18 @@ img {
 .blur-load>img {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
+}
+
+.offScreenRight {
+  position: relative;
+  transform: translateX(3000px);
+}
+
+.offScreenLeft {
+  position: relative;
+  transform: translateX(-3000px);
+}
+
+.inFocus {
+  transform: translateX(0);
 }
