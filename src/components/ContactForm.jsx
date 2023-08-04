@@ -57,7 +57,8 @@ function ContactForm() {
     style={{
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center"}}>
+      justifyContent: "center",
+      paddingBottom: "5em"}}>
       {contactForm ? (
         <Container>
             <div className="ContactContainer">
